@@ -40,7 +40,7 @@
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                   <!-- RD Navbar Brand-->
                   <div class="rd-navbar-brand">
-                    <!--Brand--><a class="brand" href="index.html"><img src="{% static 'images/logo.png'%}" alt="" width="90px" height="18px"/></a>
+                    <!--Brand--><a class="brand" href="{% url 'index' %}"><img src="{% static 'images/logo.png'%}" alt="" width="90px" height="18px"/></a>
                   </div>
                 </div>
                 <div class="rd-navbar-aside-right rd-navbar-collapse">
@@ -92,13 +92,13 @@
       <!-- Swiper-->
       <section class="section swiper-container swiper-slider swiper-slider-corporate swiper-pagination-style-2" data-loop="true" data-autoplay="5000" data-simulate-touch="true" data-nav="false" data-direction="vertical">
         <div class="swiper-wrapper text-left">
-          <div class="swiper-slide context-dark" data-slide-bg="{% static 'images/slider-4-slide-1-1920x678.jpg'%}">
+          <div class="swiper-slide context-dark" data-slide-bg="{% static 'images/seliger_scroller_1.jpg'%}">
             <div class="swiper-slide-caption section-md">
               <div class="container">
                 <div class="row">
                   <div class="col-md-10">
-                    <h6 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0">Enjoy the Best Destinations with Our Travel Agency</h6>
-                    <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span>Explore</span><span class="font-weight-bold"> The World</span></h2><a class="button button-default-outline button-ujarak" href="#" data-caption-animate="fadeInLeft" data-caption-delay="0">Get in touch</a>
+                    <h6 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0">Гостевой дом <span class="font-weight-bold"> "У ОЗЕРА"</span></h6>
+                    <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span>Гостевой дом</span><span class="font-weight-bold"> "У ОЗЕРА"</span></h2><a class="button button-default-outline button-ujarak" href="#" data-caption-animate="fadeInLeft" data-caption-delay="0">Get in touch</a>
                   </div>
                 </div>
               </div>
@@ -109,7 +109,7 @@
               <div class="container">
                 <div class="row">
                   <div class="col-md-10">
-                    <h6 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0">A team of professional Travel Experts</h6>
+                    <h6 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0">Гостевой дом <span class="font-weight-bold"> "У ОЗЕРА"</span></h6>
                     <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span>Trust</span><span class="font-weight-bold"> Our Experience</span></h2><a class="button button-default-outline button-ujarak" href="#" data-caption-animate="fadeInLeft" data-caption-delay="0">Get in touch</a>
                   </div>
                 </div>
@@ -121,7 +121,7 @@
               <div class="container">
                 <div class="row">
                   <div class="col-md-10">
-                    <h6 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0">Build your Next Holiday Trip with Us</h6>
+                    <h6 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0">Гостевой дом <span class="font-weight-bold"> "У ОЗЕРА"</span></h6>
                     <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span>Create</span><span class="font-weight-bold"> Your Tour</span></h2><a class="button button-default-outline button-ujarak" href="#" data-caption-animate="fadeInLeft" data-caption-delay="0">Get in touch</a>
                   </div>
                 </div>
@@ -133,8 +133,13 @@
         <div class="swiper-pagination"></div>
       </section>
       <!-- Section Box Categories-->
-      <section class="section section-lg section-top-1 bg-gray-4">
+      <section class="section section-lg section-top-1 bg-gray-4 mt-5 pt-md-5">
         <div class="container offset-negative-1">
+          <div class="row">
+            <div class="col">
+              <p class="our-houses mb-5">Наши дома</p>
+            </div>
+          </div>
           <div class="box-categories cta-box-wrap">
             <div class="box-categories-content">
               <div class="row justify-content-center">
@@ -178,18 +183,21 @@
                 <div class="tabs-custom tabs-horizontal tabs-line tabs-line-big tabs-line-style-2 text-center text-md-left" id="tabs-7">
                   <!-- Nav tabs-->
                   <ul class="nav nav-tabs">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-7-1" data-toggle="tab">About us</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-7-2" data-toggle="tab">Why choose us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-7-1" data-toggle="tab">О Нас</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-7-2" data-toggle="tab">Почему мы?</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-7-3" data-toggle="tab">Our mission</a></li>
                   </ul>
                   <!-- Tab panes-->
                   <div class="tab-content">
                     <div class="tab-pane fade show active" id="tabs-7-1">
-                      <p>Wonder Tour is committed to bringing our clients the best in value and quality travel arrangements. We are passionate about travel and sharing the world's wonders with you.</p>
+                      <p>Гостевой дом "У ОЗЕРА" - это не просто база отдыха на Селигере с собственным пляжем, уютными домиками, русской баней и настоящей рыбалкой...
+                       Это сочетание единения с природой и комфорта современного сервиса.
+                       Четыре дома у озера расположены в 22 км от г.Осташков, в самом живописном районе Селигера, в д. Нижние Котицы.</p>
                       <div class="group-md group-middle"><a class="button button-secondary button-pipaluk" href="contact-us.html">Get in Touch</a><a class="button button-black-outline button-md" href="about.html">Read More</a></div>
                     </div>
                     <div class="tab-pane fade" id="tabs-7-2">
-                      <p>We are proud to offer excellent quality and value for money in our tours, which give you the chance to experience your chosen destination in an authentic and exciting way.</p>
+                      <p>Сосновые леса, прозрачные воды озера, бескрайние поля и луга, чистейший воздух... Да, у нас гости увидят истинную красоту природы Селигера!
+                       И не только красоту подарят эти края Вашим глазам, они наполнят Ваши легкие чистейшим целебным воздухом, а Ваши уши наконец-то услышат, как звучит тишина, лишь изредка прерываемая пеньем птиц в лесу и криками чаек над озером.</p>
                       <div class="group-md group-middle"><a class="button button-secondary button-pipaluk" href="contact-us.html">Get in Touch</a><a class="button button-black-outline button-md" href="about.html">Read More</a></div>
                     </div>
                     <div class="tab-pane fade" id="tabs-7-3">
@@ -292,7 +300,7 @@
       <!-- Hot tours-->
       <section class="section section-sm bg-default">
         <div class="container">
-          <h3 class="oh-desktop"><span class="d-inline-block wow slideInDown">Hot Tours</span></h3>
+          <h3 class="oh-desktop"><span class="d-inline-block wow slideInDown">Горячие предложения</span></h3>
           <div class="row row-sm row-40 row-md-50">
             <div class="col-sm-6 col-md-12 wow fadeInRight">
               <!-- Product Big-->
@@ -301,12 +309,12 @@
                   <div class="unit-left"><a class="product-big-figure" href="#"><img src="{% static 'images/product-big-1-600x366.jpg'%}" alt="" width="600" height="366"/></a></div>
                   <div class="unit-body">
                     <div class="product-big-body">
-                      <h5 class="product-big-title"><a href="#">Benidorm, Spain</a></h5>
+                      <h5 class="product-big-title"><a href="#">Какой-то доомик</a></h5>
                       <div class="group-sm group-middle justify-content-start">
                         <div class="product-big-rating"><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star_half"></span></div><a class="product-big-reviews" href="#">4 customer reviews</a>
                       </div>
                       <p class="product-big-text">Benidorm is a buzzing resort with a big reputation for beach holidays. Situated in sunny Costa Blanca, the town is one of the original Spanish beach resorts...</p><a class="button button-black-outline button-ujarak" href="#">Buy This Tour</a>
-                      <div class="product-big-price-wrap"><span class="product-big-price">$790</span></div>
+                      <div class="product-big-price-wrap"><span class="product-big-price">8000 Р.</span></div>
                     </div>
                   </div>
                 </div>
@@ -319,12 +327,12 @@
                   <div class="unit-left"><a class="product-big-figure" href="#"><img src="{% static 'images/product-big-2-600x366.jpg'%}" alt="" width="600" height="366"/></a></div>
                   <div class="unit-body">
                     <div class="product-big-body">
-                      <h5 class="product-big-title"><a href="#">Mauritius Island, Africa</a></h5>
+                      <h5 class="product-big-title"><a href="#">Какой-то домик</a></h5>
                       <div class="group-sm group-middle justify-content-start">
                         <div class="product-big-rating"><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star_half"></span></div><a class="product-big-reviews" href="#">5 customer reviews</a>
                       </div>
                       <p class="product-big-text">The beautiful and inviting island nation of Mauritius is an ideal ‘flop and drop’ at the conclusion of your safari. Indulge in the delightful scents of the fragrant...</p><a class="button button-black-outline button-ujarak" href="#">Buy This Tour</a>
-                      <div class="product-big-price-wrap"><span class="product-big-price">$890</span></div>
+                      <div class="product-big-price-wrap"><span class="product-big-price">10000 Р.</span></div>
                     </div>
                   </div>
                 </div>
@@ -423,7 +431,7 @@
       <!--	Instagrram wondertour-->
       <section class="section section-sm section-top-0 section-fluid section-relative bg-gray-4">
         <div class="container-fluid">
-          <h6 class="gallery-title">Gallery</h6>
+          <h6 class="gallery-title">Галерея</h6>
           <!-- Owl Carousel-->
           <div class="owl-carousel owl-classic owl-dots-secondary" data-items="1" data-sm-items="2" data-md-items="3" data-lg-items="4" data-xl-items="5" data-xxl-items="6" data-stage-padding="15" data-xxl-stage-padding="0" data-margin="30" data-autoplay="true" data-nav="true" data-dots="true">
             <!-- Thumbnail Classic-->
