@@ -1,8 +1,8 @@
 {% load static %}
 <!DOCTYPE html>
-<html class="wide wow-animation" lang="en">
+<html class="wide wow-animation" lang="ru">
   <head>
-    <title>Home</title>
+    <title>Секс-подземелье Александра Гришина</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
     <link rel="stylesheet" href="{% static 'css/fonts.css'%}">
     <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   </head>
   <body>
@@ -22,7 +23,7 @@
         <div class="cssload-container">
           <div class="cssload-speeding-wheel"></div>
         </div>
-        <p>Loading...</p>
+        <p>Загружаем сайт...</p>
       </div>
     </div>
     <div class="page">
@@ -49,17 +50,17 @@
                       <div class="unit unit-spacing-xs">
                         <div class="unit-left"><span class="icon fa fa-clock-o"></span></div>
                         <div class="unit-body">
-                          <p>09:00<span>am</span> — 05:00<span>pm</span></p>
+                          <p>09:00 — 21:00</p>
                         </div>
                       </div>
                     </li>
                     <li>
                       <div class="unit unit-spacing-xs">
                         <div class="unit-left"><span class="icon fa fa-phone"></span></div>
-                        <div class="unit-body"><a class="link-phone" href="tel:#">+1 323-913-4688</a></div>
+                        <div class="unit-body"><a class="link-phone" href="tel:89105388744">+7 (910) 538-87-44</a></div>
                       </div>
                     </li>
-                  </ul><a class="button button-md button-default-outline-2 button-ujarak" href="#">Get a Free Quote</a>
+                  </ul><a class="button button-md button-default-outline-2 button-ujarak" data-toggle="modal" data-target="#myModal" href="#">Связаться с нами</a>
                 </div>
               </div>
             </div>
@@ -67,20 +68,18 @@
               <div class="rd-navbar-main">
                 <div class="rd-navbar-nav-wrap">
                   <ul class="list-inline list-inline-md rd-navbar-corporate-list-social">
-                    <li><a class="icon fa fa-facebook" href="#"></a></li>
-                    <li><a class="icon fa fa-twitter" href="#"></a></li>
-                    <li><a class="icon fa fa-google-plus" href="#"></a></li>
-                    <li><a class="icon fa fa-instagram" href="#"></a></li>
+                    <li><a class="icon fa fa-vk" href="https://vk.com/gduozera" target="_blank"></a></li>
+                    <li><a class="icon fa fa-whatsapp" href="https://api.whatsapp.com/send/?phone=79105388744&text&type=phone_number&app_absent=0"></a></li>
                   </ul>
                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a>
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="/">Главная</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">About</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'about' %}">О нас</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Typography</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'places' %}">Размещение</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="contact-us.html">Contact Us</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'contacts' %}">Контакты</a>
                     </li>
                   </ul>
                 </div>
@@ -98,31 +97,31 @@
                 <div class="row">
                   <div class="col-md-10">
                     <h6 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0">Гостевой дом <span class="font-weight-bold"> "У ОЗЕРА"</span></h6>
-                    <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span>Гостевой дом</span><span class="font-weight-bold"> "У ОЗЕРА"</span></h2><a class="button button-default-outline button-ujarak" href="#" data-caption-animate="fadeInLeft" data-caption-delay="0">Get in touch</a>
+                    <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span>Чарующий </span><span class="font-weight-bold"> Селигер </span></h2><a class="button button-default-outline button-ujarak" data-toggle="modal" data-target="#myModal" href="#" data-caption-animate="fadeInLeft" data-caption-delay="0">Оставить заявку</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide context-dark" data-slide-bg="{% static 'images/slider-4-slide-2-1920x678.jpg'%}">
+          <div class="swiper-slide context-dark" data-slide-bg="{% static 'images/seliger_slider_2.jpg'%}">
             <div class="swiper-slide-caption section-md">
               <div class="container">
                 <div class="row">
                   <div class="col-md-10">
                     <h6 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0">Гостевой дом <span class="font-weight-bold"> "У ОЗЕРА"</span></h6>
-                    <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span>Trust</span><span class="font-weight-bold"> Our Experience</span></h2><a class="button button-default-outline button-ujarak" href="#" data-caption-animate="fadeInLeft" data-caption-delay="0">Get in touch</a>
+                    <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span>Уют</span><span class="font-weight-bold"> у воды</span></h2><a class="button button-default-outline button-ujarak" data-toggle="modal" data-target="#myModal" href="#" data-caption-animate="fadeInLeft" data-caption-delay="0">Оставить заявку</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide context-dark" data-slide-bg="{% static 'images/slider-4-slide-3-1920x678.jpg'%}">
+          <div class="swiper-slide context-dark" data-slide-bg="{% static 'images/seliger_slider_3.jpg'%}">
             <div class="swiper-slide-caption section-md">
               <div class="container">
                 <div class="row">
                   <div class="col-md-10">
                     <h6 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0">Гостевой дом <span class="font-weight-bold"> "У ОЗЕРА"</span></h6>
-                    <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span>Create</span><span class="font-weight-bold"> Your Tour</span></h2><a class="button button-default-outline button-ujarak" href="#" data-caption-animate="fadeInLeft" data-caption-delay="0">Get in touch</a>
+                    <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100"><span>Тишина</span><span class="font-weight-bold"> и покой</span></h2><a class="button button-default-outline button-ujarak" data-toggle="modal" data-target="#myModal" href="#" data-caption-animate="fadeInLeft" data-caption-delay="0">Оставить заявку</a>
                   </div>
                 </div>
               </div>
@@ -137,36 +136,39 @@
         <div class="container offset-negative-1">
           <div class="row">
             <div class="col">
-              <p class="our-houses mb-5">Наши дома</p>
+              <p class="display-4 mb-5">Наши дома</p>
             </div>
           </div>
           <div class="box-categories cta-box-wrap">
             <div class="box-categories-content">
               <div class="row justify-content-center">
-                <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
-                  <ul class="list-marked-2 box-categories-list">
-                    <li><a href="#"><img src="{% static 'images/cta-1-368x420.jpg'%}" alt="" width="368" height="420"/></a>
-                      <h5 class="box-categories-title">Balloon Flights</h5>
-                    </li>
-                  </ul>
+                <div class="col-md-4 wow fadeInDown col-9 mb-3 mb-md-0" data-wow-delay=".2s">
+                  <div class="image-container">
+                    <a href="#">
+                        <img src="{% static 'images/house1.jpg' %}" alt=""/>
+                        <h5 class="box-categories-title">Дом с камином</h5>
+                    </a>
+                  </div>  
+                </div>
+                <div class="col-md-4 wow fadeInDown col-9 mb-3 mb-md-0" data-wow-delay=".2s">
+                  <div class="image-container">
+                    <a href="#">
+                      <a href="#"><img src="{% static 'images/house2.jpg'%}" alt=""/></a>
+                      <h5 class="box-categories-title">Дом-баня</h5>
+                    </a>
+                  </div>
                 </div>
                 <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
-                  <ul class="list-marked-2 box-categories-list">
-                    <li><a href="#"><img src="{% static 'images/cta-2-368x420.jpg'%}" alt="" width="368" height="420"/></a>
-                      <h5 class="box-categories-title">Mountain Holiday</h5>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
-                  <ul class="list-marked-2 box-categories-list">
-                    <li><a href="#"><img src="{% static 'images/cta-3-368x420.jpg'%}" alt="" width="368" height="420"/></a>
-                      <h5 class="box-categories-title">Beach Holidays</h5>
-                    </li>
-                  </ul>
+                  <div class="image-container">
+                    <a href="#">
+                      <a href="#"><img src="{% static 'images/house3.jpg'%}" alt=""/></a>
+                      <h5 class="box-categories-title">Домик</h5>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div><a class="link-classic wow fadeInUp" href="#">Other Tours<span></span></a>
+          </div><a class="link-classic wow fadeInUp" href="#">Все номера<span></span></a>
           <!-- Owl Carousel-->
         </div>
       </section>
@@ -174,18 +176,18 @@
       <section class="section section-sm section-first bg-default text-md-left">
         <div class="container">
           <div class="row row-50 align-items-center justify-content-center justify-content-xl-between">
-            <div class="col-lg-6 text-center wow fadeInUp"><img src="{% static 'images/index-3-556x382.jpg'%}" alt="" width="556" height="382"/>
+            <div class="col-lg-6 text-center wow fadeInUp"><img src="{% static 'images/new_horizons.jpg'%}" alt="" width="556" height="382"/>
             </div>
             <div class="col-lg-6 wow fadeInRight" data-wow-delay=".1s">
               <div class="box-width-lg-470">
-                <h3>Discover New Horizons</h3>
+                <h3>Откройте новые горизонты</h3>
                 <!-- Bootstrap tabs-->
                 <div class="tabs-custom tabs-horizontal tabs-line tabs-line-big tabs-line-style-2 text-center text-md-left" id="tabs-7">
                   <!-- Nav tabs-->
                   <ul class="nav nav-tabs">
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-7-1" data-toggle="tab">О Нас</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-7-2" data-toggle="tab">Почему мы?</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-7-3" data-toggle="tab">Our mission</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-7-3" data-toggle="tab">Расположение</a></li>
                   </ul>
                   <!-- Tab panes-->
                   <div class="tab-content">
@@ -193,16 +195,16 @@
                       <p>Гостевой дом "У ОЗЕРА" - это не просто база отдыха на Селигере с собственным пляжем, уютными домиками, русской баней и настоящей рыбалкой...
                        Это сочетание единения с природой и комфорта современного сервиса.
                        Четыре дома у озера расположены в 22 км от г.Осташков, в самом живописном районе Селигера, в д. Нижние Котицы.</p>
-                      <div class="group-md group-middle"><a class="button button-secondary button-pipaluk" href="contact-us.html">Get in Touch</a><a class="button button-black-outline button-md" href="about.html">Read More</a></div>
+                      <div class="group-md group-middle"><a class="button button-secondary button-pipaluk" data-toggle="modal" data-target="#myModal" href="#">Связаться с нами</a></div>
                     </div>
                     <div class="tab-pane fade" id="tabs-7-2">
                       <p>Сосновые леса, прозрачные воды озера, бескрайние поля и луга, чистейший воздух... Да, у нас гости увидят истинную красоту природы Селигера!
                        И не только красоту подарят эти края Вашим глазам, они наполнят Ваши легкие чистейшим целебным воздухом, а Ваши уши наконец-то услышат, как звучит тишина, лишь изредка прерываемая пеньем птиц в лесу и криками чаек над озером.</p>
-                      <div class="group-md group-middle"><a class="button button-secondary button-pipaluk" href="contact-us.html">Get in Touch</a><a class="button button-black-outline button-md" href="about.html">Read More</a></div>
+                      <div class="group-md group-middle"><a class="button button-secondary button-pipaluk" data-toggle="modal" data-target="#myModal" href="#">Связаться с нами</a></div>
                     </div>
                     <div class="tab-pane fade" id="tabs-7-3">
-                      <p>Our mission is to provide the ultimate travel planning experience while becoming a one-stop shop for every travel service available in the industry.</p>
-                      <div class="group-md group-middle"><a class="button button-secondary button-pipaluk" href="contact-us.html">Get in Touch</a><a class="button button-black-outline button-md" href="about.html">Read More</a></div>
+                      <p>Гостевой дом «У озера» расположен в самом живописном и уютном месте озера Селигер. Вода здесь прогревается быстрее, так как мы находимся в заливе. Уникальное местоположение позволит отдохнуть в тишине - комфортной, доброжелательной обстановке. Мы располагаемся на первой линии прямо у воды в д.Нижние Котицы, Осташковского района, Тверской области. Расстояние от МКАД - 340 км, или 4,5 часа на автомобиле.</p>
+                      <div class="group-md group-middle"><a class="button button-secondary button-pipaluk" href="https://yandex.ru/maps/-/CBqEm2sU-A" target="_blank">Мы на карте</a></div>
                     </div>
                   </div>
                 </div>
@@ -214,17 +216,19 @@
       <!--	Our Services-->
       <section class="section section-sm">
         <div class="container">
-          <h3>Our Services</h3>
+          <h3>Наши услуги</h3>
           <div class="row row-30">
             <div class="col-sm-6 col-lg-4">
               <article class="box-icon-classic">
                 <div class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left">
                   <div class="unit-left">
-                    <div class="box-icon-classic-icon fl-bigmug-line-equalization3"></div>
+                    <i class="box-icon-classic-icon fa-solid fa-house"></i>
                   </div>
                   <div class="unit-body">
-                    <h5 class="box-icon-classic-title"><a href="#">Personalized Matching</a></h5>
-                    <p class="box-icon-classic-text">Our unique matching system lets you find just the tour you want for your next holiday.</p>
+                    <h5 class="box-icon-classic-title"><a href="#">Уютные дома</a></h5>
+                    <p class="box-icon-classic-text">Мы находимся в 22 км  от
+                      г. Осташков, в самом живописном
+                      районе Селигера - д. Нижние Котицы</p>
                   </div>
                 </div>
               </article>
@@ -233,11 +237,11 @@
               <article class="box-icon-classic">
                 <div class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left">
                   <div class="unit-left">
-                    <div class="box-icon-classic-icon fl-bigmug-line-circular220"></div>
+                    <i class="box-icon-classic-icon fa-solid fa-fish-fins"></i>
                   </div>
                   <div class="unit-body">
-                    <h5 class="box-icon-classic-title"><a href="#">Wide Variety of Tours</a></h5>
-                    <p class="box-icon-classic-text">We offer a wide variety of personally picked tours with destinations all over the globe.</p>
+                    <h5 class="box-icon-classic-title"><a href="#">Рыбалка на озере</a></h5>
+                    <p class="box-icon-classic-text">Здесь можно поймать карпа, карася, судака и голавля. Два пирса на берегу позволяют ловить рыбу можно не только с лодок, но и с берега.</p>
                   </div>
                 </div>
               </article>
@@ -246,11 +250,11 @@
               <article class="box-icon-classic">
                 <div class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left">
                   <div class="unit-left">
-                    <div class="box-icon-classic-icon fl-bigmug-line-favourites5"></div>
+                    <i class="box-icon-classic-icon fa-solid fa-campground"></i>
                   </div>
                   <div class="unit-body">
-                    <h5 class="box-icon-classic-title"><a href="#">Highly Qualified Service</a></h5>
-                    <p class="box-icon-classic-text">Our tour managers are qualified, skilled, and friendly to bring you the best service.</p>
+                    <h5 class="box-icon-classic-title"><a href="#">Баня на дровах</a></h5>
+                    <p class="box-icon-classic-text">Парня баня на берегу озера. Зимой можно искупаться в проруби, а летом нырнуть с мостков.</p>
                   </div>
                 </div>
               </article>
@@ -259,11 +263,11 @@
               <article class="box-icon-classic">
                 <div class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left">
                   <div class="unit-left">
-                    <div class="box-icon-classic-icon fl-bigmug-line-headphones32"></div>
+                    <i class="box-icon-classic-icon fa-solid fa-bicycle"></i>
                   </div>
                   <div class="unit-body">
-                    <h5 class="box-icon-classic-title"><a href="#">24/7 Support</a></h5>
-                    <p class="box-icon-classic-text">You can always get professional support from our staff 24/7 and ask any question you have.</p>
+                    <h5 class="box-icon-classic-title"><a href="#">Прокат транспорта</a></h5>
+                    <p class="box-icon-classic-text">Мы предоставляем услуги по прокату велосипедов, квадроциклов, катамаранов, лыж и снегоходов</p>
                   </div>
                 </div>
               </article>
@@ -272,11 +276,11 @@
               <article class="box-icon-classic">
                 <div class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left">
                   <div class="unit-left">
-                    <div class="box-icon-classic-icon fl-bigmug-line-hot67"></div>
+                    <i class="box-icon-classic-icon fa-solid fa-child-reaching"></i>
                   </div>
                   <div class="unit-body">
-                    <h5 class="box-icon-classic-title"><a href="#">Handpicked Hotels</a></h5>
-                    <p class="box-icon-classic-text">Our team offers only the best selection of affordable and luxury hotels to our clients.</p>
+                    <h5 class="box-icon-classic-title"><a href="#">Детская зона</a></h5>
+                    <p class="box-icon-classic-text"> Игровая площадка с батутом и десткой горкой для детей всех возрастов.</p>
                   </div>
                 </div>
               </article>
@@ -285,66 +289,97 @@
               <article class="box-icon-classic">
                 <div class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left">
                   <div class="unit-left">
-                    <div class="box-icon-classic-icon fl-bigmug-line-wallet26"></div>
+                    <i class="box-icon-classic-icon fa-solid fa-tents"></i>
                   </div>
                   <div class="unit-body">
-                    <h5 class="box-icon-classic-title"><a href="#">Best Price Guarantee</a></h5>
-                    <p class="box-icon-classic-text">If you find tours that are cheaper than ours, we will compensate the difference.</p>
+                    <h5 class="box-icon-classic-title"><a href="#">Зоны отдыха</a></h5>
+                    <p class="box-icon-classic-text">На территории гостевых домов располагаются беседка с мангалом,
+                      детская игровая зона, пляж и баня.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <article class="box-icon-classic">
+                <div class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left">
+                  <div class="unit-left">
+                    <i class="box-icon-classic-icon fa-solid fa-chess-board"></i>
+                  </div>
+                  <div class="unit-body">
+                    <h5 class="box-icon-classic-title"><a href="#">Настольные игры</a></h5>
+                    <p class="box-icon-classic-text">Отдыхающие могут прекрасно провести время и насладиться игрой в шахматы или шашки.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <article class="box-icon-classic">
+                <div class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left">
+                  <div class="unit-left">
+                    <i class="box-icon-classic-icon fa-solid fa-fire-burner"></i>
+                  </div>
+                  <div class="unit-body">
+                    <h5 class="box-icon-classic-title"><a href="#">Мангал</a></h5>
+                    <p class="box-icon-classic-text">Уютная беседка с мангалом, где вы можете закоптить рыбу или пожарить шашлык.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <article class="box-icon-classic">
+                <div class="unit box-icon-classic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left">
+                  <div class="unit-left">
+                    <i class="box-icon-classic-icon fa-brands fa-pagelines"></i>
+                  </div>
+                  <div class="unit-body">
+                    <h5 class="box-icon-classic-title"><a href="#">Натуральные продукты</a></h5>
+                    <p class="box-icon-classic-text">Вы можете заказать натуральные продукты домашнего производства: свежие яйца, домашний творог, молоко и сметану.</p>
                   </div>
                 </div>
               </article>
             </div>
           </div>
-        </div>
+          </div>
+          
+        
       </section>
       <!-- Hot tours-->
       <section class="section section-sm bg-default">
         <div class="container">
           <h3 class="oh-desktop"><span class="d-inline-block wow slideInDown">Горячие предложения</span></h3>
           <div class="row row-sm row-40 row-md-50">
+            {% for house in houses%}
             <div class="col-sm-6 col-md-12 wow fadeInRight">
               <!-- Product Big-->
               <article class="product-big">
                 <div class="unit flex-column flex-md-row align-items-md-stretch">
-                  <div class="unit-left"><a class="product-big-figure" href="#"><img src="{% static 'images/product-big-1-600x366.jpg'%}" alt="" width="600" height="366"/></a></div>
+                  <div class="unit-left"><a class="product-big-figure" href="#"><img src="{{ house.image.url }}" alt="" width="600" height="366"/></a></div>
                   <div class="unit-body">
                     <div class="product-big-body">
-                      <h5 class="product-big-title"><a href="#">Какой-то доомик</a></h5>
+                      <h5 class="product-big-title"><a href="#">{{house.name}}</a></h5>
+                      
                       <div class="group-sm group-middle justify-content-start">
-                        <div class="product-big-rating"><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star_half"></span></div><a class="product-big-reviews" href="#">4 customer reviews</a>
                       </div>
-                      <p class="product-big-text">Benidorm is a buzzing resort with a big reputation for beach holidays. Situated in sunny Costa Blanca, the town is one of the original Spanish beach resorts...</p><a class="button button-black-outline button-ujarak" href="#">Buy This Tour</a>
-                      <div class="product-big-price-wrap"><span class="product-big-price">8000 Р.</span></div>
+                      
+
+                      <p class="product-big-text">
+                        {{house.description}}
+                      </p><a class="button button-black-outline button-ujarak" data-toggle="modal" data-target="#myModal" href="#">Забронировать</a>
+                      <div class="product-big-price-wrap"><span class="product-big-price">{{house.price}} Р.</span></div>
                     </div>
                   </div>
                 </div>
               </article>
             </div>
-            <div class="col-sm-6 col-md-12 wow fadeInLeft">
-              <!-- Product Big-->
-              <article class="product-big">
-                <div class="unit flex-column flex-md-row align-items-md-stretch">
-                  <div class="unit-left"><a class="product-big-figure" href="#"><img src="{% static 'images/product-big-2-600x366.jpg'%}" alt="" width="600" height="366"/></a></div>
-                  <div class="unit-body">
-                    <div class="product-big-body">
-                      <h5 class="product-big-title"><a href="#">Какой-то домик</a></h5>
-                      <div class="group-sm group-middle justify-content-start">
-                        <div class="product-big-rating"><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star_half"></span></div><a class="product-big-reviews" href="#">5 customer reviews</a>
-                      </div>
-                      <p class="product-big-text">The beautiful and inviting island nation of Mauritius is an ideal ‘flop and drop’ at the conclusion of your safari. Indulge in the delightful scents of the fragrant...</p><a class="button button-black-outline button-ujarak" href="#">Buy This Tour</a>
-                      <div class="product-big-price-wrap"><span class="product-big-price">10000 Р.</span></div>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
+            {% endfor %}
+            
           </div>
         </div>
       </section>
       <!-- Different People-->
       <section class="section section-sm">
         <div class="container">
-          <h3 class="title-block find-car oh"><span class="d-inline-block wow slideInUp">Different People — One Mission</span></h3>
+          <h3 class="title-block find-car oh"><span class="d-inline-block wow slideInUp">Наша команда</span></h3>
           <div class="row row-30 justify-content-center box-ordered">
             <div class="col-sm-6 col-md-5 col-lg-3">
               <!-- Team Modern-->
@@ -357,16 +392,18 @@
                   </svg>
                 </div>
                 <div class="team-modern-caption">
-                  <h6 class="team-modern-name"><a href="#">Diana Robinson</a></h6>
-                  <p class="team-modern-status">Founder, Owner</p>
-                  <h6 class="team-modern-phone"><a href="tel:#">+1 323-913-4688</a></h6>
+                  <h6 class="team-modern-name"><a href="#">Юлия Гришина</a></h6>
+                  <p class="team-modern-status">Управляющая</p>
+                  <h6 class="team-modern-phone"><a href="tel:89105388744">
+                    +7 (910) 538-87-44
+                    </a></h6>
                 </div>
               </article>
             </div>
             <div class="col-sm-6 col-md-5 col-lg-3">
               <!-- Team Modern-->
               <article class="team-modern">
-                <div class="team-modern-header"><a class="team-modern-figure" href="#"><img class="img-circles" src="{% static 'images/user-2-118x118.jpg' %}" alt="" width="118" height="118"/></a>
+                <div class="team-modern-header"><a class="team-modern-figure" href="#"><img class="img-circles" src="{% static 'images/user-1-118x118.jpg'%}" alt="" width="118" height="118"/></a>
                   <svg x="0px" y="0px" width="270px" height="70px" viewbox="0 0 270 70" enable-background="new 0 0 270 70" xml:space="preserve">
                     <g>
                       <path fill="#161616" d="M202.085,0C193.477,28.912,166.708,50,135,50S76.523,28.912,67.915,0H0v70h270V0H202.085z"></path>
@@ -374,43 +411,11 @@
                   </svg>
                 </div>
                 <div class="team-modern-caption">
-                  <h6 class="team-modern-name"><a href="#">Peter McMillan</a></h6>
-                  <p class="team-modern-status">Travel Agent</p>
-                  <h6 class="team-modern-phone"><a href="tel:#">+1 323-913-4688</a></h6>
-                </div>
-              </article>
-            </div>
-            <div class="col-sm-6 col-md-5 col-lg-3">
-              <!-- Team Modern-->
-              <article class="team-modern">
-                <div class="team-modern-header"><a class="team-modern-figure" href="#"><img class="img-circles" src="{% static 'images/user-3-118x118.jpg' %}" alt="" width="118" height="118"/></a>
-                  <svg x="0px" y="0px" width="270px" height="70px" viewbox="0 0 270 70" enable-background="new 0 0 270 70" xml:space="preserve">
-                    <g>
-                      <path fill="#161616" d="M202.085,0C193.477,28.912,166.708,50,135,50S76.523,28.912,67.915,0H0v70h270V0H202.085z"></path>
-                    </g>
-                  </svg>
-                </div>
-                <div class="team-modern-caption">
-                  <h6 class="team-modern-name"><a href="#">Jill Peterson</a></h6>
-                  <p class="team-modern-status">Tour Consultant</p>
-                  <h6 class="team-modern-phone"><a href="tel:#">+1 323-913-4688</a></h6>
-                </div>
-              </article>
-            </div>
-            <div class="col-sm-6 col-md-5 col-lg-3">
-              <!-- Team Modern-->
-              <article class="team-modern">
-                <div class="team-modern-header"><a class="team-modern-figure" href="#"><img class="img-circles" src="{% static 'images/user-4-118x118.jpg' %}" alt="" width="118" height="118"/></a>
-                  <svg x="0px" y="0px" width="270px" height="70px" viewbox="0 0 270 70" enable-background="new 0 0 270 70" xml:space="preserve">
-                    <g>
-                      <path fill="#161616" d="M202.085,0C193.477,28.912,166.708,50,135,50S76.523,28.912,67.915,0H0v70h270V0H202.085z"></path>
-                    </g>
-                  </svg>
-                </div>
-                <div class="team-modern-caption">
-                  <h6 class="team-modern-name"><a href="#">James Smith</a></h6>
-                  <p class="team-modern-status">PR Manager</p>
-                  <h6 class="team-modern-phone"><a href="tel:#">+1 323-913-4688</a></h6>
+                  <h6 class="team-modern-name"><a href="#">Александр Гришин</a></h6>
+                  <p class="team-modern-status">Владелец секс-подземелья</p>
+                  <h6 class="team-modern-phone"><a href="tel:9157233958">
+                    +7 (915) 723-39-58 
+                    </a></h6>
                 </div>
               </article>
             </div>
@@ -419,66 +424,67 @@
       </section>
       <!-- Section Subscribe-->
       <section class="section bg-default text-center offset-top-50">
-        <div class="parallax-container" data-parallax-img="{% static 'images/parallax-1-1920x850.jpg'%}">
+        <div class="parallax-container" data-parallax-img="{% static 'images/seliger_scroller_1.jpg'%}">
           <div class="parallax-content section-xl section-inset-custom-1 context-dark bg-overlay-2-21">
             <div class="container">
-              <h2 class="heading-2 oh font-weight-normal wow slideInDown"><span class="d-block font-weight-semi-bold">First-class Impressions</span><span class="d-block font-weight-light">are Waiting for You!</span></h2>
-              <p class="text-width-medium text-spacing-75 wow fadeInLeft" data-wow-delay=".1s">Our agency offers travelers various tours and excursions with destinations all over the world. Browse our website to find your dream tour!</p><a class="button button-secondary button-pipaluk" href="#">Book a Tour Now</a>
+              <h2 class="heading-2 oh font-weight-normal wow slideInDown"><span class="d-block font-weight-semi-bold">Первоклассные впечатления ждут </span><span class="d-block font-weight-light">вас!</span></h2>
+              <p class="text-width-medium text-spacing-75 wow fadeInLeft" data-wow-delay=".1s">Уникальный отдых с обязательным посещением секс-подземелья</p><a class="button button-secondary button-pipaluk" href="#"  data-toggle="modal" data-target="#myModal">Связаться с нами</a>
             </div>
           </div>
         </div>
       </section>
-      <!--	Instagrram wondertour-->
+
+      
       <section class="section section-sm section-top-0 section-fluid section-relative bg-gray-4">
         <div class="container-fluid">
-          <h6 class="gallery-title">Галерея</h6>
+          <h6 class="gallery-title display-1 mt-3">Галерея</h6>
           <!-- Owl Carousel-->
           <div class="owl-carousel owl-classic owl-dots-secondary" data-items="1" data-sm-items="2" data-md-items="3" data-lg-items="4" data-xl-items="5" data-xxl-items="6" data-stage-padding="15" data-xxl-stage-padding="0" data-margin="30" data-autoplay="true" data-nav="true" data-dots="true">
             <!-- Thumbnail Classic-->
             <article class="thumbnail thumbnail-mary">
-              <div class="thumbnail-mary-figure"><img src="{% static 'images/gallery-image-1-270x195.jpg'%}" alt="" width="270" height="195"/>
+              <div class="thumbnail-mary-figure"><img src="{% static 'images/house1.jpg'%}" alt="" width="270" height="195"/>
               </div>
               <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/gallery-image-1-1200x800-original.jpg'%}" data-lightgallery="item"><img src="{% static 'images/gallery-image-1-270x195.jpg'%}" alt="" width="270" height="195"/></a>
               </div>
             </article>
             <!-- Thumbnail Classic-->
             <article class="thumbnail thumbnail-mary">
-              <div class="thumbnail-mary-figure"><img src="{% static 'images/gallery-image-2-270x195.jpg'%}" alt="" width="270" height="195"/>
+              <div class="thumbnail-mary-figure"><img src="{% static 'images/house2.jpg'%}" alt="" width="270" height="195"/>
               </div>
               <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/gallery-image-2-1200x800-original.jpg'%}" data-lightgallery="item"><img src="{% static 'images/gallery-image-2-270x195.jpg'%}" alt="" width="270" height="195"/></a>
               </div>
             </article>
             <!-- Thumbnail Classic-->
             <article class="thumbnail thumbnail-mary">
-              <div class="thumbnail-mary-figure"><img src="{% static 'images/gallery-image-3-270x195.jpg'%}" alt="" width="270" height="195"/>
+              <div class="thumbnail-mary-figure"><img src="{% static 'images/house3.jpg'%}" alt="" width="270" height="195"/>
               </div>
               <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/gallery-image-3-1200x800-original.jpg'%}" data-lightgallery="item"><img src="{% static 'images/gallery-image-3-270x195.jpg'%}" alt="" width="270" height="195"/></a>
               </div>
             </article>
             <!-- Thumbnail Classic-->
             <article class="thumbnail thumbnail-mary">
-              <div class="thumbnail-mary-figure"><img src="{% static 'images/gallery-image-4-270x195.jpg'%}" alt="" width="270" height="195"/>
+              <div class="thumbnail-mary-figure"><img src="{% static 'images/house1.jpg'%}" alt="" width="270" height="195"/>
               </div>
               <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/gallery-image-4-1200x800-original.jpg'%}" data-lightgallery="item"><img src="{% static 'images/gallery-image-4-270x195.jpg'%}" alt="" width="270" height="195"/></a>
               </div>
             </article>
             <!-- Thumbnail Classic-->
             <article class="thumbnail thumbnail-mary">
-              <div class="thumbnail-mary-figure"><img src="{% static 'images/gallery-image-5-270x195.jpg'%}" alt="" width="270" height="195"/>
+              <div class="thumbnail-mary-figure"><img src="{% static 'images/house2.jpg'%}" alt="" width="270" height="195"/>
               </div>
               <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/gallery-image-5-1200x800-original.jpg'%}" data-lightgallery="item"><img src="{% static 'images/gallery-image-5-270x195.jpg'%}" alt="" width="270" height="195"/></a>
               </div>
             </article>
             <!-- Thumbnail Classic-->
             <article class="thumbnail thumbnail-mary">
-              <div class="thumbnail-mary-figure"><img src="{% static 'images/gallery-image-6-270x195.jpg'%}" alt="" width="270" height="195"/>
+              <div class="thumbnail-mary-figure"><img src="{% static 'images/house3.jpg'%}" alt="" width="270" height="195"/>
               </div>
               <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/gallery-image-6-1200x800-original.jpg'%}" data-lightgallery="item"><img src="{% static 'images/gallery-image-6-270x195.jpg'%}" alt="" width="270" height="195"/></a>
               </div>
             </article>
             <!-- Thumbnail Classic-->
             <article class="thumbnail thumbnail-mary">
-              <div class="thumbnail-mary-figure"><img src="{% static 'images/gallery-image-7-270x195.jpg'%}" alt="" width="270" height="195"/>
+              <div class="thumbnail-mary-figure"><img src="{% static 'images/house1.jpg'%}" alt="" width="270" height="195"/>
               </div>
               <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/gallery-image-7-1200x800-original.jpg'%}" data-lightgallery="item"><img src="{% static 'images/gallery-image-7-270x195.jpg'%}" alt="" width="270" height="195"/></a>
               </div>
@@ -490,67 +496,54 @@
       <footer class="section footer-corporate context-dark">
         <div class="footer-corporate-inset">
           <div class="container">
-            <div class="row row-40 justify-content-lg-between">
-              <div class="col-sm-6 col-md-12 col-lg-3 col-xl-4">
+            <div class="row row-40 justify-content-between">
+              <div class="col-sm-12 col-md-6">
                 <div class="oh-desktop">
                   <div class="wow slideInRight" data-wow-delay="0s">
-                    <h6 class="text-spacing-100 text-uppercase">Contact us</h6>
+                    <h6 class="text-spacing-100 text-uppercase">Контакты</h6>
                     <ul class="footer-contacts d-inline-block d-sm-block">
                       <li>
-                        <div class="unit">
+                        <div class="unit align-items-center">
                           <div class="unit-left"><span class="icon fa fa-phone"></span></div>
-                          <div class="unit-body"><a class="link-phone" href="tel:#">+1 323-913-4688</a></div>
+                          <div class="unit-body"><a class="link-phone" href="tel:89105388744">+7 (910) 538-87-44</a></div>
+                        </div>
+                      </li>
+                      
+                      <li>
+                        <div class="unit align-items-center">
+                          <div class="unit-left"><span class="icon fa fa-phone"></span></div>
+                          <div class="unit-body"><a class="link-phone" href="tel:89157233958">+7 (915) 723-39-58</a></div>
                         </div>
                       </li>
                       <li>
-                        <div class="unit">
-                          <div class="unit-left"><span class="icon fa fa-envelope"></span></div>
-                          <div class="unit-body"><a class="link-aemail" href="mailto:#">info@demolink.org</a></div>
+                        <div class="unit align-items-center">
+                          <div class="unit-left"><i class="icon fa-solid fa-envelope"></i>></div>
+                          <div class="unit-body"><a class="link-phone" href="mailto:buozera@mail.ru">buozera@mail.ru</a></div>
                         </div>
                       </li>
                       <li>
                         <div class="unit">
                           <div class="unit-left"><span class="icon fa fa-location-arrow"></span></div>
-                          <div class="unit-body"><a class="link-location" href="#">4730 Crystal Springs Dr, Los Angeles, CA 90027</a></div>
+                          <div class="unit-body"><a class="link-location" href="#">д.Нижние Котицы, Осташковского района, Тверской области. Расстояние от МКАД - 340 км, или 4,5 часа на автомобиле.</a></div>
                         </div>
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-5 col-lg-3 col-xl-4">
-                <div class="oh-desktop">
-                  <div class="wow slideInDown" data-wow-delay="0s">
-                    <h6 class="text-spacing-100 text-uppercase">Popular news</h6>
-                    <!-- Post Minimal 2-->
-                    <article class="post post-minimal-2">
-                      <p class="post-minimal-2-title"><a href="#">Your Personal Guide to 5 Best Places to Visit on Earth</a></p>
-                      <div class="post-minimal-2-time">
-                        <time datetime="2019-05-04">May 04, 2019</time>
-                      </div>
-                    </article>
-                    <!-- Post Minimal 2-->
-                    <article class="post post-minimal-2">
-                      <p class="post-minimal-2-title"><a href="#">Top 10 Hotels: Rating by Wonder Tour Travel Experts</a></p>
-                      <div class="post-minimal-2-time">
-                        <time datetime="2019-05-04">May 04, 2019</time>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-11 col-md-7 col-lg-5 col-xl-4">
+              <div class="col-sm-12 col-md-6">
                 <div class="oh-desktop">
                   <div class="wow slideInLeft" data-wow-delay="0s">
-                    <h6 class="text-spacing-100 text-uppercase">Quick links</h6>
+                    <h6 class="text-spacing-100 text-uppercase">Навигация</h6>
                     <ul class="row-6 list-0 list-marked list-marked-md list-marked-secondary list-custom-2">
-                      <li><a href="about.html">About us</a></li>
-                      <li><a href="#">Our Tours</a></li>
-                      <li><a href="#">Our Team</a></li>
-                      <li><a href="#">Gallery</a></li>
-                      <li><a href="#">Blog</a></li>
+                      <li><a href="about.html">О нас</a></li>
+                      <li><a href="#">Контакты</a></li>
+                      <li><a href="#">Наша команда</a></li>
+                      <li><a href="#">Галерея</a></li>
+                      <li><a href="#">Секс-вечеринки</a></li>
+                      <li><a href="#">Услуги</a></li>
                     </ul>
-                    <div class="group-md group-middle justify-content-sm-start"><a class="button button-lg button-primary button-ujarak" href="#">Get in touch</a></div>
+                    <div class="group-md group-middle justify-content-sm-start"><a class="button button-lg button-primary button-ujarak" data-toggle="modal" data-target="#myModal" href="#">Оставить заявку</a></div>
                   </div>
                 </div>
               </div>
@@ -559,23 +552,21 @@
         </div>
         <div class="footer-corporate-bottom-panel">
           <div class="container">
-            <div class="row justfy-content-xl-space-berween row-10 align-items-md-center2">
+            <div class="row justfy-content-space-between row-10 align-items-md-center">
               <div class="col-sm-6 col-md-4 text-sm-right text-md-center">
                 <div>
                   <ul class="list-inline list-inline-sm footer-social-list-2">
-                    <li><a class="icon fa fa-facebook" href="#"></a></li>
-                    <li><a class="icon fa fa-twitter" href="#"></a></li>
-                    <li><a class="icon fa fa-google-plus" href="#"></a></li>
-                    <li><a class="icon fa fa-instagram" href="#"></a></li>
+                    <li><a class="icon fa fa-vk" href="https://vk.com/gduozera" target="_blank"></a></li>
+                    <li><a class="icon fa fa-whatsapp" href="https://api.whatsapp.com/send/?phone=79105388744&text&type=phone_number&app_absent=0"></a></li>
                   </ul>
                 </div>
               </div>
               <div class="col-sm-6 col-md-4 order-sm-first">
                 <!-- Rights-->
-                <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Wonder Tour</span>. All Rights Reserved. Design by <a href="https://www.templatemonster.com">TemplateMonster</a></p>
+                <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Домик у Озера</span>. Все права защищены. Design by <a href="https://nes-agency.ru/" target="_blank">nes-agency</a></p>
               </div>
               <div class="col-sm-6 col-md-4 text-md-right">
-                <p class="rights"><a href="#">Privacy Policy</a></p>
+                <p class="rights"><a href="#">Политика конфиденциальности</a></p>
               </div>
             </div>
           </div>
@@ -584,8 +575,125 @@
     </div>
     <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="myModalLabel">Забронировать дом</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="" method="post" id="form">
+              {% csrf_token %}
+              <div class="form-group">
+                <input id="name" aria-label="name" type="text" name="name" placeholder="Ваше имя" class="form-control">
+                <div class="error text-start fs-6 fw-light"></div>
+              </div>
+              <div class="form-group">
+                <input id="email" aria-label="email" type="text" name="email" placeholder="Ваш E-mail" class="form-control">
+                <div class="error text-start fs-6 fw-light"></div>
+              </div>
+              <div class="form-group">
+                <input id="telephone" aria-label="telephone" type="text" name="telephone" placeholder="Телефон" class="form-control">
+                <div class="error text-start fs-6 fw-light"></div>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Оставить заявку" class="btn btn-primary py-3 px-5">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Javascript-->
     <script src="{% static 'js/core.min.js'%}"></script>
     <script src="{% static 'js/script.js'%}"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    const form = document.getElementById('form');
+    const name = document.getElementById('name');
+    const email = document.getElementById('email');
+    const telephone = document.getElementById('telephone');
+    
+    const setError = (element, message) => {
+        const inputControl = element.parentElement;
+        const errorDisplay = inputControl.querySelector('.error');
+
+        errorDisplay.innerText = message;
+        inputControl.classList.add('error');
+        inputControl.classList.remove('success')
+    };
+
+    const setSuccess = element => {
+        const inputControl = element.parentElement;
+        const errorDisplay = inputControl.querySelector('.error');
+
+        errorDisplay.innerText = '';
+        inputControl.classList.add('success');
+        inputControl.classList.remove('error');
+    };
+
+    const isValidEmail = email => {
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    }
+
+    const isValidTelephone = telephone => {
+        const re = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
+        return re.test(String(telephone).toLowerCase());
+    }
+
+    const validateInputs = () => {
+        const nameValue = name.value.trim();
+        const emailValue = email.value.trim();
+        const telephoneValue = telephone.value.trim();
+        
+        let flag = true;
+
+        if (nameValue == '' || nameValue == null) {
+            setError(name, 'Имя не может быть пустым');
+            flag = flag && false;
+        } else {
+            setSuccess(name)
+            flag = flag && true;
+        }
+
+        if (emailValue == '' || emailValue == null) {
+            setError(email, 'Email не может быть пустым');
+            flag = flag && false;
+        } else if (!isValidEmail(emailValue)) {
+            setError(email, 'Некорректный email адрес');
+            flag = flag && false;
+        } else {
+            setSuccess(email);
+            flag = flag && true;
+        }
+
+        if (telephoneValue == '' || telephoneValue == null) {
+            setError(telephone, 'Номер телефона не может быть пустым');
+            flag = flag && false;
+        } else if (!isValidTelephone(telephoneValue)) {
+            setError(telephone,' Некорректный номер телефона');
+            flag = flag && false;
+        } else {
+            setSuccess(telephone);
+            flag = flag && true;
+        }
+        return flag;
+
+        
+
+
+    };
+
+    form.addEventListener('submit', e => {
+        if (!validateInputs()){
+            e.preventDefault();
+        }
+    });
+</script>
   </body>
 </html>

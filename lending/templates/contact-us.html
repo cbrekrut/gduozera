@@ -1,7 +1,8 @@
+{% load static %}
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
-    <title>Contact Us</title>
+    <title>О нас</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,23 +10,21 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <!-- Stylesheets-->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7CPoppins:400%7CTeko:300,400">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
-    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
   </head>
   <body>
-    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <div class="preloader">
       <div class="preloader-body">
         <div class="cssload-container">
           <div class="cssload-speeding-wheel"></div>
         </div>
-        <p>Loading...</p>
+        <p>Загружаем сайт...</p>
       </div>
     </div>
     <div class="page">
-      <!-- Page Header--><a class="banner banner-top" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" target="_blank"><img src="images/intense_02.jpg" alt=""/></a>
+      <!-- Page Header-->
       <header class="section page-header">
         <!-- RD Navbar-->
         <div class="rd-navbar-wrap">
@@ -39,7 +38,7 @@
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                   <!-- RD Navbar Brand-->
                   <div class="rd-navbar-brand">
-                    <!--Brand--><a class="brand" href="index.html"><img src="images/logo-default-450x37.png" alt="" width="225" height="18"/></a>
+                    <!--Brand--><a class="brand" href="{% url 'index' %}"><img src="{% static 'images/logo.png'%}" alt="" width="90px" height="18px"/></a>
                   </div>
                 </div>
                 <div class="rd-navbar-aside-right rd-navbar-collapse">
@@ -48,17 +47,17 @@
                       <div class="unit unit-spacing-xs">
                         <div class="unit-left"><span class="icon fa fa-clock-o"></span></div>
                         <div class="unit-body">
-                          <p>09:00<span>am</span> — 05:00<span>pm</span></p>
+                          <p>09:00 — 21:00</p>
                         </div>
                       </div>
                     </li>
                     <li>
                       <div class="unit unit-spacing-xs">
                         <div class="unit-left"><span class="icon fa fa-phone"></span></div>
-                        <div class="unit-body"><a class="link-phone" href="tel:#">+1 323-913-4688</a></div>
+                        <div class="unit-body"><a class="link-phone" href="tel:#">+7 (910) 538-87-44</a></div>
                       </div>
                     </li>
-                  </ul><a class="button button-md button-default-outline-2 button-ujarak" href="#">Get a Free Quote</a>
+                  </ul><a class="button button-md button-default-outline-2 button-ujarak" href="#contact-form">Связаться с нами</a>
                 </div>
               </div>
             </div>
@@ -66,20 +65,18 @@
               <div class="rd-navbar-main">
                 <div class="rd-navbar-nav-wrap">
                   <ul class="list-inline list-inline-md rd-navbar-corporate-list-social">
-                    <li><a class="icon fa fa-facebook" href="#"></a></li>
-                    <li><a class="icon fa fa-twitter" href="#"></a></li>
-                    <li><a class="icon fa fa-google-plus" href="#"></a></li>
-                    <li><a class="icon fa fa-instagram" href="#"></a></li>
+                    <li><a class="icon fa fa-vk" href="#"></a></li>
+                    <li><a class="icon fa fa-whatsapp" href="#"></a></li>
                   </ul>
                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'index' %}">Главная</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">About</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'about' %}">О нас</a>
                     </li>
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Typography</a>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'places' %}">Размещение</a>
                     </li>
-                    <li class="rd-nav-item active"><a class="rd-nav-link" href="contact-us.html">Contact Us</a>
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="{% url 'contacts' %}">Контакты</a>
                     </li>
                   </ul>
                 </div>
@@ -107,142 +104,108 @@
                 <div class="box-contacts-body">
                   <div class="box-contacts-icon fl-bigmug-line-cellphone55"></div>
                   <div class="box-contacts-decor"></div>
-                  <p class="box-contacts-link"><a href="tel:#">+1 323-913-4688</a></p>
-                  <p class="box-contacts-link"><a href="tel:#">+1 323-888-4554</a></p>
+                  <p class="box-contacts-link"><a href="tel:#">+7 (915) 723-39-58</a></p>
+                  <p class="box-contacts-link"><a href="tel:#">+7 (910) 538-87-44</a></p>
                 </div>
               </article>
             </div>
             <div class="col-sm-8 col-md-6 col-lg-4">
+              <a href="https://yandex.ru/maps/-/CBqEm2sU-A" target="_blank" class="contact-map">
               <article class="box-contacts">
                 <div class="box-contacts-body">
                   <div class="box-contacts-icon fl-bigmug-line-up104"></div>
                   <div class="box-contacts-decor"></div>
-                  <p class="box-contacts-link"><a href="#">4730 Crystal Springs Dr, Los Angeles, CA 90027</a></p>
+                  <p class="box-contacts-link">Тверская область, Осташков, д. Нижние Котицы, ул.Береговая 7, Гостевой дом "У ОЗЕРА"</p>
                 </div>
               </article>
+              </a>
             </div>
             <div class="col-sm-8 col-md-6 col-lg-4">
+              <a href="mailto:#" class="contact-map">
               <article class="box-contacts">
                 <div class="box-contacts-body">
                   <div class="box-contacts-icon fl-bigmug-line-chat55"></div>
                   <div class="box-contacts-decor"></div>
-                  <p class="box-contacts-link"><a href="mailto:#">mail@demolink.org</a></p>
-                  <p class="box-contacts-link"><a href="mailto:#">info@demolink.org</a></p>
+                  <p class="box-contacts-link">buozera@mail.ru</p>
                 </div>
               </article>
+              </a>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Contact Form-->
-      <section class="section section-sm section-last bg-default text-left">
+      <section class="section section-sm section-last bg-default text-left" id="contact-form">
         <div class="container">
           <article class="title-classic">
             <div class="title-classic-title">
-              <h3>Get in touch</h3>
+              <h3>Связаться с нами</h3>
             </div>
             <div class="title-classic-text">
-              <p>If you have any questions, just fill in the contact form, and we will answer you shortly.</p>
+              <p>Если вы хотите забронировать дом, или у вас есть какие-то вопросы, заполните форму и мы вам перезвоним</p>
             </div>
           </article>
-          <form class="rd-form rd-form-variant-2 rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
-            <div class="row row-14 gutters-14">
-              <div class="col-md-4">
-                <div class="form-wrap">
-                  <input class="form-input" id="contact-your-name-2" type="text" name="name" data-constraints="@Required">
-                  <label class="form-label" for="contact-your-name-2">Your Name</label>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="form-wrap">
-                  <input class="form-input" id="contact-email-2" type="email" name="email" data-constraints="@Email @Required">
-                  <label class="form-label" for="contact-email-2">E-mail</label>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="form-wrap">
-                  <input class="form-input" id="contact-phone-2" type="text" name="phone" data-constraints="@Numeric">
-                  <label class="form-label" for="contact-phone-2">Phone</label>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-wrap">
-                  <label class="form-label" for="contact-message-2">Message</label>
-                  <textarea class="form-input textarea-lg" id="contact-message-2" name="message" data-constraints="@Required"></textarea>
-                </div>
-              </div>
+          <form action="" method="post" id="form">
+            {% csrf_token %}
+            <div class="form-group">
+              <input id="name" aria-label="name" type="text" name="name" placeholder="Ваше имя" class="form-control">
+              <div class="error text-start fs-6 fw-light"></div>
             </div>
-            <button class="button button-primary button-pipaluk" type="submit">Send Message</button>
+            <div class="form-group">
+              <input id="email" aria-label="email" type="text" name="email" placeholder="Ваш E-mail" class="form-control">
+              <div class="error text-start fs-6 fw-light"></div>
+            </div>
+            <div class="form-group">
+              <input id="telephone" aria-label="telephone" type="text" name="telephone" placeholder="Телефон" class="form-control">
+              <div class="error text-start fs-6 fw-light"></div>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Оставить заявку" class="btn btn-primary py-3 px-5">
+            </div>
           </form>
         </div>
       </section>
 
-      <!-- Page Footer--><a class="banner" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" target="_blank"><img src="images/intense_big_02.jpg" alt=""/></a>
       <footer class="section footer-corporate context-dark">
         <div class="footer-corporate-inset">
           <div class="container">
-            <div class="row row-40 justify-content-lg-between">
-              <div class="col-sm-6 col-md-12 col-lg-3 col-xl-4">
+            <div class="row row-40 justify-content-center">
+              <div class="col-sm-12 col-md-6">
                 <div class="oh-desktop">
                   <div class="wow slideInRight" data-wow-delay="0s">
-                    <h6 class="text-spacing-100 text-uppercase">Contact us</h6>
+                    <h6 class="text-spacing-100 text-uppercase">Контакты</h6>
                     <ul class="footer-contacts d-inline-block d-sm-block">
                       <li>
                         <div class="unit">
                           <div class="unit-left"><span class="icon fa fa-phone"></span></div>
-                          <div class="unit-body"><a class="link-phone" href="tel:#">+1 323-913-4688</a></div>
+                          <div class="unit-body"><a class="link-phone" href="tel:#">+7 (910) 538-87-44</a></div>
                         </div>
                       </li>
                       <li>
                         <div class="unit">
-                          <div class="unit-left"><span class="icon fa fa-envelope"></span></div>
-                          <div class="unit-body"><a class="link-aemail" href="mailto:#">info@demolink.org</a></div>
+                          <div class="unit-left"><span class="icon fa fa-phone"></span></div>
+                          <div class="unit-body"><a class="link-phone" href="tel:#">+7 (915) 723-39-58</a></div>
                         </div>
                       </li>
                       <li>
                         <div class="unit">
                           <div class="unit-left"><span class="icon fa fa-location-arrow"></span></div>
-                          <div class="unit-body"><a class="link-location" href="#">4730 Crystal Springs Dr, Los Angeles, CA 90027</a></div>
+                          <div class="unit-body"><a class="link-location" href="#">д.Нижние Котицы, Осташковского района, Тверской области. Расстояние от МКАД - 340 км, или 4,5 часа на автомобиле.</a></div>
                         </div>
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-5 col-lg-3 col-xl-4">
-                <div class="oh-desktop">
-                  <div class="wow slideInDown" data-wow-delay="0s">
-                    <h6 class="text-spacing-100 text-uppercase">Popular news</h6>
-                    <!-- Post Minimal 2-->
-                    <article class="post post-minimal-2">
-                      <p class="post-minimal-2-title"><a href="#">Your Personal Guide to 5 Best Places to Visit on Earth</a></p>
-                      <div class="post-minimal-2-time">
-                        <time datetime="2019-05-04">May 04, 2019</time>
-                      </div>
-                    </article>
-                    <!-- Post Minimal 2-->
-                    <article class="post post-minimal-2">
-                      <p class="post-minimal-2-title"><a href="#">Top 10 Hotels: Rating by Wonder Tour Travel Experts</a></p>
-                      <div class="post-minimal-2-time">
-                        <time datetime="2019-05-04">May 04, 2019</time>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-11 col-md-7 col-lg-5 col-xl-4">
+              <div class="col-sm-12 col-md-6">
                 <div class="oh-desktop">
                   <div class="wow slideInLeft" data-wow-delay="0s">
-                    <h6 class="text-spacing-100 text-uppercase">Quick links</h6>
+                    <h6 class="text-spacing-100 text-uppercase">Навигация</h6>
                     <ul class="row-6 list-0 list-marked list-marked-md list-marked-secondary list-custom-2">
-                      <li><a href="about.html">About us</a></li>
-                      <li><a href="#">Our Tours</a></li>
-                      <li><a href="#">Our Team</a></li>
-                      <li><a href="#">Gallery</a></li>
-                      <li><a href="#">Blog</a></li>
+                      <li><a href="{% url 'about' %}">О нас</a></li>
+                      <li><a href="#">Контакты</a></li>
                     </ul>
-                    <div class="group-md group-middle justify-content-sm-start"><a class="button button-lg button-primary button-ujarak" href="#">Get in touch</a></div>
                   </div>
                 </div>
               </div>
@@ -255,29 +218,111 @@
               <div class="col-sm-6 col-md-4 text-sm-right text-md-center">
                 <div>
                   <ul class="list-inline list-inline-sm footer-social-list-2">
-                    <li><a class="icon fa fa-facebook" href="#"></a></li>
-                    <li><a class="icon fa fa-twitter" href="#"></a></li>
-                    <li><a class="icon fa fa-google-plus" href="#"></a></li>
-                    <li><a class="icon fa fa-instagram" href="#"></a></li>
+                    <li><a class="icon fa fa-vk" href="https://vk.com/gduozera" target="_blank"></a></li>
+                    <li><a class="icon fa fa-whatsapp" href="https://api.whatsapp.com/send/?phone=79105388744&text&type=phone_number&app_absent=0"></a></li>
                   </ul>
                 </div>
               </div>
               <div class="col-sm-6 col-md-4 order-sm-first">
                 <!-- Rights-->
-                <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Wonder Tour</span>. All Rights Reserved. Design by <a href="https://www.templatemonster.com">TemplateMonster</a></p>
+                <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Домик у Озера</span>. Все права защищены. Design by <a href="https://nes-agency.ru/" target="_blank">nes-agency</a></p>
               </div>
               <div class="col-sm-6 col-md-4 text-md-right">
-                <p class="rights"><a href="#">Privacy Policy</a></p>
+                <p class="rights"><a href="#">Политика конфиденциальности</a></p>
               </div>
             </div>
           </div>
         </div>
       </footer>
     </div>
-    <!-- Global Mailform Output-->
-    <div class="snackbars" id="form-output-global"></div>
-    <!-- Javascript-->
-    <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
+   <!-- Global Mailform Output-->
+   <div class="snackbars" id="form-output-global"></div>
+   <!-- Javascript-->
+   <script src="{% static 'js/core.min.js' %}"></script>
+   <script src="{% static 'js/script.js' %}"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <script>
+   const form = document.getElementById('form');
+   const name = document.getElementById('name');
+   const email = document.getElementById('email');
+   const telephone = document.getElementById('telephone');
+   
+   const setError = (element, message) => {
+       const inputControl = element.parentElement;
+       const errorDisplay = inputControl.querySelector('.error');
+
+       errorDisplay.innerText = message;
+       inputControl.classList.add('error');
+       inputControl.classList.remove('success')
+   };
+
+   const setSuccess = element => {
+       const inputControl = element.parentElement;
+       const errorDisplay = inputControl.querySelector('.error');
+
+       errorDisplay.innerText = '';
+       inputControl.classList.add('success');
+       inputControl.classList.remove('error');
+   };
+
+   const isValidEmail = email => {
+       const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+       return re.test(String(email).toLowerCase());
+   }
+
+   const isValidTelephone = telephone => {
+       const re = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
+       return re.test(String(telephone).toLowerCase());
+   }
+
+   const validateInputs = () => {
+       const nameValue = name.value.trim();
+       const emailValue = email.value.trim();
+       const telephoneValue = telephone.value.trim();
+       
+       let flag = true;
+
+       if (nameValue == '' || nameValue == null) {
+           setError(name, 'Имя не может быть пустым');
+           flag = flag && false;
+       } else {
+           setSuccess(name)
+           flag = flag && true;
+       }
+
+       if (emailValue == '' || emailValue == null) {
+           setError(email, 'Email не может быть пустым');
+           flag = flag && false;
+       } else if (!isValidEmail(emailValue)) {
+           setError(email, 'Некорректный email адрес');
+           flag = flag && false;
+       } else {
+           setSuccess(email);
+           flag = flag && true;
+       }
+
+       if (telephoneValue == '' || telephoneValue == null) {
+           setError(telephone, 'Номер телефона не может быть пустым');
+           flag = flag && false;
+       } else if (!isValidTelephone(telephoneValue)) {
+           setError(telephone,' Некорректный номер телефона');
+           flag = flag && false;
+       } else {
+           setSuccess(telephone);
+           flag = flag && true;
+       }
+       return flag;
+
+       
+
+
+   };
+
+   form.addEventListener('submit', e => {
+       if (!validateInputs()){
+           e.preventDefault();
+       }
+   });
+</script>
   </body>
 </html>
