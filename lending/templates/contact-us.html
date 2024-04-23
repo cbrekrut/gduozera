@@ -85,13 +85,14 @@
           </nav>
         </div>
       </header>
-      <!-- RD Google Map-->
-      <section class="section section-fluid">
-        <div class="google-map-container" data-zoom="5" data-icon="images/gmap_marker.png" data-icon-active="images/gmap_marker.png" data-center="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-styles="[{&quot;featureType&quot;:&quot;landscape&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FFBB00&quot;},{&quot;saturation&quot;:43.400000000000006},{&quot;lightness&quot;:37.599999999999994},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FFC200&quot;},{&quot;saturation&quot;:-61.8},{&quot;lightness&quot;:45.599999999999994},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.arterial&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FF0300&quot;},{&quot;saturation&quot;:-100},{&quot;lightness&quot;:51.19999999999999},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FF0300&quot;},{&quot;saturation&quot;:-100},{&quot;lightness&quot;:52},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#0078FF&quot;},{&quot;saturation&quot;:-13.200000000000003},{&quot;lightness&quot;:2.4000000000000057},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;poi&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#00FF6A&quot;},{&quot;saturation&quot;:-1.0989010989011234},{&quot;lightness&quot;:11.200000000000017},{&quot;gamma&quot;:1}]}]">
-          <div class="google-map"></div>
-          <ul class="google-map-markers">
-            <li data-location="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-description="9870 St Vincent Place, Glasgow"></li>
-          </ul>
+      <!-- Ya Map-->
+      <section class="section section-sm section-first bg-default">
+        <div class="container">
+          <div class="row row-30 justify-content-center">
+            <div class="col" style="height: 50vh;">
+              <div class="map" id="map"></div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -179,13 +180,13 @@
                       <li>
                         <div class="unit">
                           <div class="unit-left"><span class="icon fa fa-phone"></span></div>
-                          <div class="unit-body"><a class="link-phone" href="tel:#">+7 (910) 538-87-44</a></div>
+                          <div class="unit-body"><a class="link-phone" href="tel:89105388744">+7 (910) 538-87-44</a></div>
                         </div>
                       </li>
                       <li>
                         <div class="unit">
                           <div class="unit-left"><span class="icon fa fa-phone"></span></div>
-                          <div class="unit-body"><a class="link-phone" href="tel:#">+7 (915) 723-39-58</a></div>
+                          <div class="unit-body"><a class="link-phone" href="tel:89157233958">+7 (915) 723-39-58</a></div>
                         </div>
                       </li>
                       <li>
@@ -238,6 +239,22 @@
    <!-- Global Mailform Output-->
    <div class="snackbars" id="form-output-global"></div>
    <!-- Javascript-->
+   <script src="https://api-maps.yandex.ru/2.1?apikey=ваш API-ключ&load=package.full&lang=ru_RU">
+  </script>
+  <script type="text/javascript">
+    ymaps.ready(function () {
+      var myMap = new ymaps.Map("map", {
+        center: [57.030820,33.280769],
+        zoom: 17
+      });
+      myMap.geoObjects.add(new ymaps.Placemark([57.030820,33.280769], {
+          balloonContent: ' <strong>Гостевой дом "У озера"</strong>'
+      }, {
+          preset: 'islands#icon',
+          iconColor: '#0095b6'
+      }))
+      });
+  </script>
    <script src="{% static 'js/core.min.js' %}"></script>
    <script src="{% static 'js/script.js' %}"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
