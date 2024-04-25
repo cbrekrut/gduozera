@@ -20,7 +20,7 @@
         <div class="cssload-container">
           <div class="cssload-speeding-wheel"></div>
         </div>
-        <p>Загружаем сайт...</p>
+        <p>Ищем лучшие предложения...</p>
       </div>
     </div>
     <div class="page">
@@ -54,7 +54,8 @@
                     <li>
                       <div class="unit unit-spacing-xs">
                         <div class="unit-left"><span class="icon fa fa-phone"></span></div>
-                        <div class="unit-body"><a class="link-phone" href="tel:#">+7 (910) 538-87-44</a></div>
+                        <div class="unit-body"><a class="link-phone" href="tel:89105388744">+7 (910) 538-87-44</a></div>
+                        <div class="unit-body"><a class="link-phone" href="tel:89157233958">+7 (915) 723-39-58</a></div>
                       </div>
                     </li>
                   </ul><a class="button button-md button-default-outline-2 button-ujarak" data-toggle="modal" data-target="#myModal" href="#">Связаться с нами</a>
@@ -95,7 +96,7 @@
               <li class="active">О нас</li>
             </ul>
           </div>
-          <div class="box-position" style="background-image: url({% static 'images/breadcrumbs-bg.jpg'%});"></div>
+          <div class="box-position" style="background-image: url({% static 'images/seliger_scroller_1.jpg'%});"></div>
         </div>
       </section>
       <!-- Why choose us-->
@@ -258,9 +259,9 @@
                 </div>
                 <div class="col-sm-6 col-md-5 col-lg-3">
                   <div class="counter-classic">
-                    <div class="counter-classic-number"><span class="counter">25</span>
+                    <div class="counter-classic-number"><span class="counter">11</span><span class="symbol">тыс.</span>
                     </div>
-                    <h5 class="counter-classic-title">Человек в команде</h5>
+                    <h5 class="counter-classic-title">В Сообществе</h5>
                   </div>
                 </div>
               </div>
@@ -303,15 +304,13 @@
               </div>
               <div class="col-sm-12 col-md-6">
                 <div class="oh-desktop">
-                  <div class="wow slideInLeft" data-wow-delay="0s">
+                  <div class="wow slideInLeft" data-wow-delay="0.3s">
                     <h6 class="text-spacing-100 text-uppercase">Навигация</h6>
                     <ul class="row-6 list-0 list-marked list-marked-md list-marked-secondary list-custom-2">
-                      <li><a href="about.html">О нас</a></li>
-                      <li><a href="#">Контакты</a></li>
-                      <li><a href="#">Наша команда</a></li>
-                      <li><a href="#">Галерея</a></li>
-                      <li><a href="#">Секс-вечеринки</a></li>
-                      <li><a href="#">Услуги</a></li>
+                      <li><a href="{% url 'index'%}">Главная</a></li>
+                      <li><a href="{% url 'about'%}">О нас</a></li>
+                      <li><a href="{% url 'contacts'%}">Контакты</a></li>
+                      <li><a href="{% url 'places'%}">Размещение</a></li>
                     </ul>
                     <div class="group-md group-middle justify-content-sm-start"><a class="button button-lg button-primary button-ujarak"  data-toggle="modal" data-target="#myModal" href="#">Оставить заявку</a></div>
                   </div>
@@ -373,6 +372,14 @@
                 <div class="error text-start fs-6 fw-light"></div>
               </div>
               <div class="form-group">
+                <input id="date" aria-label="date" type="text" name="date" placeholder="Даты поездки" class="form-control">
+                <div class="error text-start fs-6 fw-light"></div>
+              </div>
+              <div class="form-group">
+                <input id="home" aria-label="home" type="text" name="home" placeholder="Какой дом?" class="form-control">
+                <div class="error text-start fs-6 fw-light"></div>
+              </div>
+              <div class="form-group">
                 <input type="submit" value="Оставить заявку" class="btn btn-primary py-3 px-5">
               </div>
             </form>
@@ -389,6 +396,8 @@
     const name = document.getElementById('name');
     const email = document.getElementById('email');
     const telephone = document.getElementById('telephone');
+    const date = document.getElementById('date');
+    const home = document.getElementById('home');
     
     const setError = (element, message) => {
         const inputControl = element.parentElement;
@@ -422,6 +431,8 @@
         const nameValue = name.value.trim();
         const emailValue = email.value.trim();
         const telephoneValue = telephone.value.trim();
+        const dateValue = date.value.trim();
+        const homeValue = home.value.trim();
         
         let flag = true;
 
@@ -430,6 +441,20 @@
             flag = flag && false;
         } else {
             setSuccess(name)
+            flag = flag && true;
+        }
+        if (dateValue == '' || dateValue == null) {
+            setError(date, 'Даты не могут быть пустыми');
+            flag = flag && false;
+        } else {
+            setSuccess(date)
+            flag = flag && true;
+        }
+        if (homeValue == '' || homeValue == null) {
+            setError(home, 'Выберите дом');
+            flag = flag && false;
+        } else {
+            setSuccess(home)
             flag = flag && true;
         }
 

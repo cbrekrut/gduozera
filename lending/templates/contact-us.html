@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
-    <title>О нас</title>
+    <title>Связаться с нами!</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +20,7 @@
         <div class="cssload-container">
           <div class="cssload-speeding-wheel"></div>
         </div>
-        <p>Загружаем сайт...</p>
+        <p>Ищем лучшие предложения...</p>
       </div>
     </div>
     <div class="page">
@@ -54,7 +54,8 @@
                     <li>
                       <div class="unit unit-spacing-xs">
                         <div class="unit-left"><span class="icon fa fa-phone"></span></div>
-                        <div class="unit-body"><a class="link-phone" href="tel:#">+7 (910) 538-87-44</a></div>
+                        <div class="unit-body"><a class="link-phone" href="tel:89105388744">+7 (910) 538-87-44</a></div>
+                        <div class="unit-body"><a class="link-phone" href="tel:89157233958">+7 (915) 723-39-58</a></div>
                       </div>
                     </li>
                   </ul><a class="button button-md button-default-outline-2 button-ujarak" href="#contact-form">Связаться с нами</a>
@@ -204,8 +205,10 @@
                   <div class="wow slideInLeft" data-wow-delay="0s">
                     <h6 class="text-spacing-100 text-uppercase">Навигация</h6>
                     <ul class="row-6 list-0 list-marked list-marked-md list-marked-secondary list-custom-2">
-                      <li><a href="{% url 'about' %}">О нас</a></li>
-                      <li><a href="#">Контакты</a></li>
+                      <li><a href="{% url 'index'%}">Главная</a></li>
+                      <li><a href="{% url 'about'%}">О нас</a></li>
+                      <li><a href="{% url 'contacts'%}">Контакты</a></li>
+                      <li><a href="{% url 'places'%}">Размещение</a></li>
                     </ul>
                   </div>
                 </div>

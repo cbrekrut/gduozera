@@ -1,8 +1,8 @@
 from django.shortcuts import render
 import telebot
 from .models import House
-TELEGRAM_BOT_TOKEN ='#'
-TELEGRAM_CHAT_ID = '#'
+TELEGRAM_BOT_TOKEN ='6919768284:AAEAiJtCTWaUWVdkY5vxDNRmb3pqES4Fx_o'
+TELEGRAM_CHAT_ID = '-4137887911'
 bot = telebot.TeleBot(TELEGRAM_BOT_TOKEN)
 
 def index(request):
@@ -11,7 +11,9 @@ def index(request):
         name = request.POST.get('name')
         email = request.POST.get('email')
         telephone = request.POST.get('telephone')
-        message = f"Новый заказ!\nИмя: {name}\nEmail: {email}\nТелефон: {telephone}"
+        date = request.POST.get('date')
+        home = request.POST.get('home')
+        message = f"Новый заказ!\nИмя: {name}\nEmail: {email}\nТелефон: {telephone}\nДаты: {date}\nДомик: {home}"
         
         bot.send_message(TELEGRAM_CHAT_ID, message)
     return render(request, 'index.html', {'houses':houses})

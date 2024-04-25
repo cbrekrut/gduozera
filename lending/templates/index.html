@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="ru">
   <head>
-    <title>Секс-подземелье Александра Гришина</title>
+    <title>У Озера</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +23,7 @@
         <div class="cssload-container">
           <div class="cssload-speeding-wheel"></div>
         </div>
-        <p>Загружаем сайт...</p>
+        <p>Ищем лучшие предложения...</p>
       </div>
     </div>
     <div class="page">
@@ -58,6 +58,7 @@
                       <div class="unit unit-spacing-xs">
                         <div class="unit-left"><span class="icon fa fa-phone"></span></div>
                         <div class="unit-body"><a class="link-phone" href="tel:89105388744">+7 (910) 538-87-44</a></div>
+                        <div class="unit-body"><a class="link-phone" href="tel:89157233958">+7 (915) 723-39-58</a></div>
                       </div>
                     </li>
                   </ul><a class="button button-md button-default-outline-2 button-ujarak" data-toggle="modal" data-target="#myModal" href="#">Связаться с нами</a>
@@ -144,7 +145,7 @@
               <div class="row justify-content-center">
                 <div class="col-md-4 wow fadeInDown col-9 mb-3 mb-md-0" data-wow-delay=".2s">
                   <div class="image-container">
-                    <a href="#">
+                    <a href="{% url 'places' %}">
                         <img src="{% static 'images/house1.jpg' %}" alt=""/>
                         <h5 class="box-categories-title">Дом с камином</h5>
                     </a>
@@ -152,23 +153,23 @@
                 </div>
                 <div class="col-md-4 wow fadeInDown col-9 mb-3 mb-md-0" data-wow-delay=".2s">
                   <div class="image-container">
-                    <a href="#">
-                      <a href="#"><img src="{% static 'images/house2.jpg'%}" alt=""/></a>
+                    <a href="{% url 'places' %}">
+                      <a href="{% url 'places' %}"><img src="{% static 'images/house2.jpg'%}" alt=""/></a>
                       <h5 class="box-categories-title">Дом-баня</h5>
                     </a>
                   </div>
                 </div>
                 <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
                   <div class="image-container">
-                    <a href="#">
-                      <a href="#"><img src="{% static 'images/house3.jpg'%}" alt=""/></a>
+                    <a href="{% url 'places' %}">
+                      <a href="{% url 'places' %}"><img src="{% static 'images/house3.jpg'%}" alt=""/></a>
                       <h5 class="box-categories-title">Домик</h5>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-          </div><a class="link-classic wow fadeInUp" href="#">Все номера<span></span></a>
+          </div><a class="link-classic wow fadeInUp" href="{% url 'places' %}">Все номера<span></span></a>
           <!-- Owl Carousel-->
         </div>
       </section>
@@ -393,7 +394,7 @@
                 </div>
                 <div class="team-modern-caption">
                   <h6 class="team-modern-name"><a href="#">Юлия Гришина</a></h6>
-                  <p class="team-modern-status">Управляющая</p>
+                  <p class="team-modern-status">Основательница</p>
                   <h6 class="team-modern-phone"><a href="tel:89105388744">
                     +7 (910) 538-87-44
                     </a></h6>
@@ -412,8 +413,8 @@
                 </div>
                 <div class="team-modern-caption">
                   <h6 class="team-modern-name"><a href="#">Александр Гришин</a></h6>
-                  <p class="team-modern-status">Владелец секс-подземелья</p>
-                  <h6 class="team-modern-phone"><a href="tel:9157233958">
+                  <p class="team-modern-status">Основатель</p>
+                  <h6 class="team-modern-phone"><a href="tel:89157233958">
                     +7 (915) 723-39-58 
                     </a></h6>
                 </div>
@@ -428,7 +429,7 @@
           <div class="parallax-content section-xl section-inset-custom-1 context-dark bg-overlay-2-21">
             <div class="container">
               <h2 class="heading-2 oh font-weight-normal wow slideInDown"><span class="d-block font-weight-semi-bold">Первоклассные впечатления ждут </span><span class="d-block font-weight-light">вас!</span></h2>
-              <p class="text-width-medium text-spacing-75 wow fadeInLeft" data-wow-delay=".1s">Уникальный отдых с обязательным посещением секс-подземелья</p><a class="button button-secondary button-pipaluk" href="#"  data-toggle="modal" data-target="#myModal">Связаться с нами</a>
+              <p class="text-width-medium text-spacing-75 wow fadeInLeft" data-wow-delay=".1s">Уникальный отдых с наилчшими воспоминаниями!</p><a class="button button-secondary button-pipaluk" href="#"  data-toggle="modal" data-target="#myModal">Связаться с нами</a>
             </div>
           </div>
         </div>
@@ -444,49 +445,49 @@
             <article class="thumbnail thumbnail-mary">
               <div class="thumbnail-mary-figure"><img src="{% static 'images/house1.jpg'%}" alt="" width="270" height="195"/>
               </div>
-              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/gallery-image-1-1200x800-original.jpg'%}" data-lightgallery="item"><img src="{% static 'images/gallery-image-1-270x195.jpg'%}" alt="" width="270" height="195"/></a>
+              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/house1.jpg'%}" data-lightgallery="item"><img src="{% static 'images/house1.jpg'%}" alt="" width="270" height="195"/></a>
               </div>
             </article>
             <!-- Thumbnail Classic-->
             <article class="thumbnail thumbnail-mary">
               <div class="thumbnail-mary-figure"><img src="{% static 'images/house2.jpg'%}" alt="" width="270" height="195"/>
               </div>
-              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/gallery-image-2-1200x800-original.jpg'%}" data-lightgallery="item"><img src="{% static 'images/gallery-image-2-270x195.jpg'%}" alt="" width="270" height="195"/></a>
+              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/house2.jpg'%}" data-lightgallery="item"><img src="{% static 'images/house2.jpg'%}" alt="" width="270" height="195"/></a>
               </div>
             </article>
             <!-- Thumbnail Classic-->
             <article class="thumbnail thumbnail-mary">
               <div class="thumbnail-mary-figure"><img src="{% static 'images/house3.jpg'%}" alt="" width="270" height="195"/>
               </div>
-              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/gallery-image-3-1200x800-original.jpg'%}" data-lightgallery="item"><img src="{% static 'images/gallery-image-3-270x195.jpg'%}" alt="" width="270" height="195"/></a>
+              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/house3.jpg'%}" data-lightgallery="item"><img src="{% static 'images/house3.jpg'%}" alt="" width="270" height="195"/></a>
               </div>
             </article>
             <!-- Thumbnail Classic-->
             <article class="thumbnail thumbnail-mary">
-              <div class="thumbnail-mary-figure"><img src="{% static 'images/house1.jpg'%}" alt="" width="270" height="195"/>
+              <div class="thumbnail-mary-figure"><img src="{% static 'images/nomer/nomer6.jpeg'%}" alt="" width="270" height="195"/>
               </div>
-              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/gallery-image-4-1200x800-original.jpg'%}" data-lightgallery="item"><img src="{% static 'images/gallery-image-4-270x195.jpg'%}" alt="" width="270" height="195"/></a>
-              </div>
-            </article>
-            <!-- Thumbnail Classic-->
-            <article class="thumbnail thumbnail-mary">
-              <div class="thumbnail-mary-figure"><img src="{% static 'images/house2.jpg'%}" alt="" width="270" height="195"/>
-              </div>
-              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/gallery-image-5-1200x800-original.jpg'%}" data-lightgallery="item"><img src="{% static 'images/gallery-image-5-270x195.jpg'%}" alt="" width="270" height="195"/></a>
+              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/nomer/nomer6.jpeg'%}" data-lightgallery="item"><img src="{% static 'images/nomer/nomer6.jpeg'%}" alt="" width="270" height="195"/></a>
               </div>
             </article>
             <!-- Thumbnail Classic-->
             <article class="thumbnail thumbnail-mary">
-              <div class="thumbnail-mary-figure"><img src="{% static 'images/house3.jpg'%}" alt="" width="270" height="195"/>
+              <div class="thumbnail-mary-figure"><img src="{% static 'images/banya/dom-banya5.jpeg'%}" alt="" width="270" height="195"/>
               </div>
-              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/gallery-image-6-1200x800-original.jpg'%}" data-lightgallery="item"><img src="{% static 'images/gallery-image-6-270x195.jpg'%}" alt="" width="270" height="195"/></a>
+              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/banya/dom-banya5.jpeg'%}" data-lightgallery="item"><img src="{% static 'images/banya/dom-banya5.jpeg'%}" alt="" width="270" height="195"/></a>
               </div>
             </article>
             <!-- Thumbnail Classic-->
             <article class="thumbnail thumbnail-mary">
-              <div class="thumbnail-mary-figure"><img src="{% static 'images/house1.jpg'%}" alt="" width="270" height="195"/>
+              <div class="thumbnail-mary-figure"><img src="{% static 'images/banya/dom-banya3.jpeg'%}" alt="" width="270" height="195"/>
               </div>
-              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/gallery-image-7-1200x800-original.jpg'%}" data-lightgallery="item"><img src="{% static 'images/gallery-image-7-270x195.jpg'%}" alt="" width="270" height="195"/></a>
+              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/banya/dom-banya3.jpeg'%}" data-lightgallery="item"><img src="{% static 'images/banya/dom-banya3.jpeg'%}" alt="" width="270" height="195"/></a>
+              </div>
+            </article>
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-mary">
+              <div class="thumbnail-mary-figure"><img src="{% static 'images/banya/dom-banya2.jpeg'%}" alt="" width="270" height="195"/>
+              </div>
+              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/banya/dom-banya2.jpeg'%}" data-lightgallery="item"><img src="{% static 'images/banya/dom-banya2.jpeg'%}" alt="" width="270" height="195"/></a>
               </div>
             </article>
           </div>
@@ -536,12 +537,10 @@
                   <div class="wow slideInLeft" data-wow-delay="0s">
                     <h6 class="text-spacing-100 text-uppercase">Навигация</h6>
                     <ul class="row-6 list-0 list-marked list-marked-md list-marked-secondary list-custom-2">
-                      <li><a href="about.html">О нас</a></li>
-                      <li><a href="#">Контакты</a></li>
-                      <li><a href="#">Наша команда</a></li>
-                      <li><a href="#">Галерея</a></li>
-                      <li><a href="#">Секс-вечеринки</a></li>
-                      <li><a href="#">Услуги</a></li>
+                      <li><a href="{% url 'index'%}">Главная</a></li>
+                      <li><a href="{% url 'about'%}">О нас</a></li>
+                      <li><a href="{% url 'contacts'%}">Контакты</a></li>
+                      <li><a href="{% url 'places'%}">Размещение</a></li>
                     </ul>
                     <div class="group-md group-middle justify-content-sm-start"><a class="button button-lg button-primary button-ujarak" data-toggle="modal" data-target="#myModal" href="#">Оставить заявку</a></div>
                   </div>
@@ -601,6 +600,14 @@
                 <div class="error text-start fs-6 fw-light"></div>
               </div>
               <div class="form-group">
+                <input id="date" aria-label="date" type="text" name="date" placeholder="Даты поездки" class="form-control">
+                <div class="error text-start fs-6 fw-light"></div>
+              </div>
+              <div class="form-group">
+                <input id="home" aria-label="home" type="text" name="home" placeholder="Какой дом?" class="form-control">
+                <div class="error text-start fs-6 fw-light"></div>
+              </div>
+              <div class="form-group">
                 <input type="submit" value="Оставить заявку" class="btn btn-primary py-3 px-5">
               </div>
             </form>
@@ -612,88 +619,106 @@
     <script src="{% static 'js/core.min.js'%}"></script>
     <script src="{% static 'js/script.js'%}"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script>
-    const form = document.getElementById('form');
-    const name = document.getElementById('name');
-    const email = document.getElementById('email');
-    const telephone = document.getElementById('telephone');
-    
-    const setError = (element, message) => {
-        const inputControl = element.parentElement;
-        const errorDisplay = inputControl.querySelector('.error');
+    <script>
+      const form = document.getElementById('form');
+      const name = document.getElementById('name');
+      const email = document.getElementById('email');
+      const telephone = document.getElementById('telephone');
+      const date = document.getElementById('date');
+      const home = document.getElementById('home');
+      
+      const setError = (element, message) => {
+          const inputControl = element.parentElement;
+          const errorDisplay = inputControl.querySelector('.error');
 
-        errorDisplay.innerText = message;
-        inputControl.classList.add('error');
-        inputControl.classList.remove('success')
-    };
+          errorDisplay.innerText = message;
+          inputControl.classList.add('error');
+          inputControl.classList.remove('success')
+      };
 
-    const setSuccess = element => {
-        const inputControl = element.parentElement;
-        const errorDisplay = inputControl.querySelector('.error');
+      const setSuccess = element => {
+          const inputControl = element.parentElement;
+          const errorDisplay = inputControl.querySelector('.error');
 
-        errorDisplay.innerText = '';
-        inputControl.classList.add('success');
-        inputControl.classList.remove('error');
-    };
+          errorDisplay.innerText = '';
+          inputControl.classList.add('success');
+          inputControl.classList.remove('error');
+      };
 
-    const isValidEmail = email => {
-        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(String(email).toLowerCase());
-    }
+      const isValidEmail = email => {
+          const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          return re.test(String(email).toLowerCase());
+      }
 
-    const isValidTelephone = telephone => {
-        const re = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
-        return re.test(String(telephone).toLowerCase());
-    }
+      const isValidTelephone = telephone => {
+          const re = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
+          return re.test(String(telephone).toLowerCase());
+      }
 
-    const validateInputs = () => {
-        const nameValue = name.value.trim();
-        const emailValue = email.value.trim();
-        const telephoneValue = telephone.value.trim();
-        
-        let flag = true;
+      const validateInputs = () => {
+          const nameValue = name.value.trim();
+          const emailValue = email.value.trim();
+          const telephoneValue = telephone.value.trim();
+          const dateValue = date.value.trim();
+          const homeValue = home.value.trim();
+          
+          let flag = true;
 
-        if (nameValue == '' || nameValue == null) {
-            setError(name, 'Имя не может быть пустым');
-            flag = flag && false;
-        } else {
-            setSuccess(name)
-            flag = flag && true;
-        }
+          if (nameValue == '' || nameValue == null) {
+              setError(name, 'Имя не может быть пустым');
+              flag = flag && false;
+          } else {
+              setSuccess(name)
+              flag = flag && true;
+          }
+          if (dateValue == '' || dateValue == null) {
+              setError(date, 'Даты не могут быть пустыми');
+              flag = flag && false;
+          } else {
+              setSuccess(date)
+              flag = flag && true;
+          }
+          if (homeValue == '' || homeValue == null) {
+              setError(home, 'Выберите дом');
+              flag = flag && false;
+          } else {
+              setSuccess(home)
+              flag = flag && true;
+          }
 
-        if (emailValue == '' || emailValue == null) {
-            setError(email, 'Email не может быть пустым');
-            flag = flag && false;
-        } else if (!isValidEmail(emailValue)) {
-            setError(email, 'Некорректный email адрес');
-            flag = flag && false;
-        } else {
-            setSuccess(email);
-            flag = flag && true;
-        }
+          if (emailValue == '' || emailValue == null) {
+              setError(email, 'Email не может быть пустым');
+              flag = flag && false;
+          } else if (!isValidEmail(emailValue)) {
+              setError(email, 'Некорректный email адрес');
+              flag = flag && false;
+          } else {
+              setSuccess(email);
+              flag = flag && true;
+          }
 
-        if (telephoneValue == '' || telephoneValue == null) {
-            setError(telephone, 'Номер телефона не может быть пустым');
-            flag = flag && false;
-        } else if (!isValidTelephone(telephoneValue)) {
-            setError(telephone,' Некорректный номер телефона');
-            flag = flag && false;
-        } else {
-            setSuccess(telephone);
-            flag = flag && true;
-        }
-        return flag;
+          if (telephoneValue == '' || telephoneValue == null) {
+              setError(telephone, 'Номер телефона не может быть пустым');
+              flag = flag && false;
+          } else if (!isValidTelephone(telephoneValue)) {
+              setError(telephone,' Некорректный номер телефона');
+              flag = flag && false;
+          } else {
+              setSuccess(telephone);
+              flag = flag && true;
+          }
+          return flag;
 
-        
+          
 
 
-    };
+      };
 
-    form.addEventListener('submit', e => {
-        if (!validateInputs()){
-            e.preventDefault();
-        }
-    });
-</script>
+      form.addEventListener('submit', e => {
+          if (!validateInputs()){
+              e.preventDefault();
+          }
+      });
+  </script>
   </body>
 </html>
