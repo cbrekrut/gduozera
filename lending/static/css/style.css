@@ -19636,9 +19636,6 @@ h3 + .isotope-filters {
 	height: auto;
 }
 
-.ios .tab-height, .mac-os .tab-height {
-	height: 88px;
-}
 
 .tab-pane .button-pipaluk {
 	padding: 20px 33px 19px;
