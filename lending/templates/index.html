@@ -167,7 +167,7 @@
                 <div class="col-md-4 wow fadeInDown col-9" data-wow-delay=".2s">
                   <div class="image-container">
                     <a href="{% url 'places' %}">
-                      <a href="{% url 'places' %}"><img src="{% static 'images/house3.jpg'%}" alt=""/></a>
+                      <a href="{% url 'places' %}"><img src="{% static 'images/nomer/nomerx1.jpg'%}" alt=""/></a>
                       <h5 class="box-categories-title">Домик</h5>
                     </a>
                   </div>
@@ -182,7 +182,7 @@
       <section class="section section-sm section-first bg-default text-md-left">
         <div class="container">
           <div class="row row-50 align-items-center justify-content-center justify-content-xl-between">
-            <div class="col-lg-6 text-center wow fadeInUp"><img src="{% static 'images/new_horizons.jpg'%}" alt="" width="556" height="382"/>
+            <div class="col-lg-6 text-center wow fadeInUp"><img src="{% static 'images/whywe.jpeg'%}" alt="" width="556" height="382"/>
             </div>
             <div class="col-lg-6 wow fadeInRight" data-wow-delay=".1s">
               <div class="box-width-lg-470">
@@ -260,7 +260,7 @@
                   </div>
                   <div class="unit-body">
                     <h5 class="box-icon-classic-title"><a href="#">Баня на дровах</a></h5>
-                    <p class="box-icon-classic-text">Парня баня на берегу озера. Зимой можно искупаться в проруби, а летом нырнуть с мостков.(Оплачивается отдельно)</p>
+                    <p class="box-icon-classic-text">Парная баня на берегу озера. Зимой можно искупаться в проруби, а летом нырнуть с мостков.(Оплачивается отдельно)</p>
                   </div>
                 </div>
               </article>
@@ -350,6 +350,7 @@
         
       </section>
       <!-- Hot tours-->
+      {% if house %}
       <section class="section section-sm bg-default">
         <div class="container">
           <h3 class="oh-desktop"><span class="d-inline-block wow slideInDown">Горячие предложения</span></h3>
@@ -382,6 +383,7 @@
           </div>
         </div>
       </section>
+      {% endif %}
       <!-- Different People-->
       <section class="section section-sm">
         <div class="container">
@@ -454,6 +456,27 @@
               </div>
             </article>
             <!-- Thumbnail Classic-->
+             <article class="thumbnail thumbnail-mary">
+              <div class="thumbnail-mary-figure"><img src="{% static 'images/banya/banya.jpg'%}" alt="" width="270" height="195"/>
+              </div>
+              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/banya/banya.jpg'%}" data-lightgallery="item"><img src="{% static 'images/banya/banya.jpg'%}" alt="" width="270" height="195"/></a>
+              </div>
+            </article>
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-mary">
+              <div class="thumbnail-mary-figure"><img src="{% static 'images/banya/banya4.jpg'%}" alt="" width="270" height="195"/>
+              </div>
+              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/banya/banya4.jpg'%}" data-lightgallery="item"><img src="{% static 'images/banya/banya4.jpg'%}" alt="" width="270" height="195"/></a>
+              </div>
+            </article>
+            <!-- Thumbnail Classic-->
+            <article class="thumbnail thumbnail-mary">
+              <div class="thumbnail-mary-figure"><img src="{% static 'images/banya/banya3.jpg'%}" alt="" width="270" height="195"/>
+              </div>
+              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/banya/banya3.jpg'%}" data-lightgallery="item"><img src="{% static 'images/banya/banya3.jpg'%}" alt="" width="270" height="195"/></a>
+              </div>
+              </article>
+            <!-- Thumbnail Classic-->
             <article class="thumbnail thumbnail-mary">
               <div class="thumbnail-mary-figure"><img src="{% static 'images/house2.jpg'%}" alt="" width="270" height="195"/>
               </div>
@@ -469,9 +492,9 @@
             </article>
             <!-- Thumbnail Classic-->
             <article class="thumbnail thumbnail-mary">
-              <div class="thumbnail-mary-figure"><img src="{% static 'images/nomer/nomer6.jpeg'%}" alt="" width="270" height="195"/>
+              <div class="thumbnail-mary-figure"><img src="{% static 'images/whywe.jpeg'%}" alt="" width="270" height="195"/>
               </div>
-              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/nomer/nomer6.jpeg'%}" data-lightgallery="item"><img src="{% static 'images/nomer/nomer6.jpeg'%}" alt="" width="270" height="195"/></a>
+              <div class="thumbnail-mary-caption"><a class="icon fl-bigmug-line-zoom60" href="{% static 'images/whywe.jpeg'%}" data-lightgallery="item"><img src="{% static 'images/whywe.jpeg'%}" alt="" width="270" height="195"/></a>
               </div>
             </article>
             <!-- Thumbnail Classic-->
