@@ -1,6 +1,6 @@
 from django.shortcuts import render
 import telebot
-from .models import House
+from .models import House, Service
 TELEGRAM_BOT_TOKEN ='6919768284:AAEAiJtCTWaUWVdkY5vxDNRmb3pqES4Fx_o'
 TELEGRAM_CHAT_ID = '-4137887911'
 bot = telebot.TeleBot(TELEGRAM_BOT_TOKEN)
@@ -48,3 +48,7 @@ def contacts(request):
         
         bot.send_message(TELEGRAM_CHAT_ID, message)
     return render(request, 'contact-us.html')
+
+def services(request):
+    services = Service.objects.all()
+    return render(request, 'services.html', {'services': services})
