@@ -15,7 +15,7 @@ class Service(models.Model):
     name = models.CharField(max_length=100)
     description = models.CharField(max_length=10000)
     main_img = models.ImageField(upload_to='uploads/service_images')
-
+    
     def __str__(self):
         return self.name
 
