@@ -2548,6 +2548,9 @@ img {
 }
 
 @media (min-width: 992px) {
+    .img{
+        max-height:250px!important;
+    }
 	.desktop .figure-classic:hover::before {
 		transform: none;
 	}
@@ -8350,12 +8353,6 @@ textarea.textarea-lg {
 	margin-top: 10px;
 }
 
-.ios .box-footer-form .form-label,
-.iphone .box-footer-form .form-label,
-.ipad .box-footer-form .form-label,
-.mac-os .box-footer-form .form-label {
-	transform: none;
-}
 
 .box-footer-2-title {
 	letter-spacing: .025em;
@@ -24738,43 +24735,10 @@ img.mfp-img {
 	z-index: 1;
 }
 
-[data-x-mode="true"] .video-foreground,
-.builder .video-foreground,
-.ios .video-foreground,
-.ipad .video-foreground,
-.tablet .video-foreground,
-.devices .video-foreground,
-.mobile .video-foreground {
-	display: none;
-}
 
-[data-x-mode="true"] .video-background-poster,
-.builder .video-background-poster,
-.ios .video-background-poster,
-.ipad .video-background-poster,
-.tablet .video-background-poster,
-.devices .video-background-poster,
-.mobile .video-background-poster {
-	display: block;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-}
 
-[data-x-mode="true"] .video-background-poster img,
-.builder .video-background-poster img,
-.ios .video-background-poster img,
-.ipad .video-background-poster img,
-.tablet .video-background-poster img,
-.devices .video-background-poster img,
-.mobile .video-background-poster img {
-	object-fit: cover;
-	object-position: center;
-	width: 100%;
-	height: 100%;
-}
+
+
 
 .banner {
 	display: block;
@@ -24846,4 +24810,41 @@ img.mfp-img {
 .fa {
 	line-height: 46px !important;
 	font-size: 20px !important;
+	font-style: normal !important;
+}
+
+.social-1 {
+	position: fixed;
+	width: 50px;
+    height: 50px;
+    right: 30px;
+    bottom: 85px;
+	z-index: 100;
+	background-color: #2AABEE;
+	border-radius: 50%;
+	font-style: normal !important;
+}
+
+@media (max-width: 991px) {
+	.social-1 {
+		bottom:15px;
+	}
+}
+
+.social-2 {
+	position: fixed;
+	width: 50px;
+    height: 50px;
+    right: 30px;
+    bottom: 140px;
+	z-index: 100;
+	background-color: #25D366;
+	border-radius: 50%;
+	font-style: normal !important;
+}
+
+@media (max-width: 991px) {
+	.social-2 {
+		bottom:70px;
+	}
 }
